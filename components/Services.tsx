@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Services = () => {
   return (
-    <div className='p-8 w-full'>
+    <div className='p-8 w-full mt-20'>
       <div>
         <h1 className='font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>What does Resnet Offer ?</h1>
         <div className='flex flex-col items-center mt-4'>
