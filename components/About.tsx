@@ -37,7 +37,7 @@ export const About = () => {
       <div className='text-[24px]'>Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. </div>
       
       <div className='mt-5 relative w-fit group' >
-      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-50 ease-in-out duration-700' width={250} />
+      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700' width={250} />
   <button className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</button>
 </div>
 

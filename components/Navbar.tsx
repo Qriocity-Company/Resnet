@@ -15,7 +15,7 @@ export const Navbar = () => {
   };
   
   return (
-    <div className=" flex flex-row justify-between  w-full items-center py-4 px-4  sm:px-16 md:px-[48px] fixed top-0 max-w-[1440px]  md:text-[12px] lg:text-[16px] z-20  backdrop-blur-[0.5rem]">
+    <div className=" flex flex-row justify-between  w-full items-center   sm:px-16 md:px-[48px] fixed top-0 max-w-[1440px]  md:text-[12px] lg:text-[16px] z-20  backdrop-blur-[0.5rem]">
       <a href="/">
         <Image src={logo} alt='Resnet Solutions' className="" width={100} />
       </a>
@@ -36,11 +36,10 @@ export const Navbar = () => {
           href="/contact"
           className='relative'
         >
-          <div className="inline-flex relative justify-center items-center gap-[19px] px-4 py-[10px] bg-[#08081B] border-2 border-red-500 z-5">
-    
-            Contact Us
-            
-          </div>
+          <div className=' relative  group' >
+      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700 h-[60px]' width={250} />
+  <button className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[8px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</button>
+</div>
           {/* <Image src={buttonPattern} alt='' height={80} width={160} className='absolute  h-[80px] w-[160px] top-0 z-1'></Image> */}
         </a>
       </div>
@@ -84,12 +83,12 @@ export const Navbar = () => {
           >
             Our Services
           </a> */}
-          <a
-            href="/contact"
-            onClick={toggleMenu}
-          >
-            Contact Us
-          </a>
+          
+          <div className='mt-5 relative w-fit group' >
+      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700' width={250} />
+  <a  href="/contact"
+            onClick={toggleMenu} className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</a>
+</div>
         </div>
       )}
     </div>
