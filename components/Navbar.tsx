@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { HiMenu, HiX } from "react-icons/hi";
 import { FaArrowRight } from "react-icons/fa";
 import logo from '../assets/Resnet Logo White.png'
-import buttonPattern from '../assets/button-pattern.png'
+import buttonPattern from "../assets/contact-btn-img.png"
 export const Navbar = () => {
 
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +15,7 @@ export const Navbar = () => {
   };
   
   return (
-    <div className=" flex flex-row justify-between  w-full items-center   sm:px-16 md:px-[48px] fixed top-0 max-w-[1440px]  md:text-[12px] lg:text-[16px] z-20  backdrop-blur-[0.5rem]">
+    <div className=" flex flex-row justify-between  w-full items-center   sm:px-16 md:px-[48px] fixed top-0 max-w-[1440px]  md:text-[12px] lg:text-[16px] z-20  backdrop-blur-[0.5rem] border-b-[1px] border-gray-800">
       <a href="/">
         <Image src={logo} alt='Resnet Solutions' className="" width={100} />
       </a>

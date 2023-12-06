@@ -1,9 +1,38 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import "@/styles/Hero.css";
 import Image from "next/image";
-import buttonPattern from '../assets/contact-btn-img.png'
+import buttonPattern from "../assets/contact-btn-img.png";
 export const Hero = () => {
-  return (
+  const [showfinaldiv, setShowFinalDiv] = useState(false);
+  const [b1, setB1] = useState(false);
+  const [cn ,setcn] =useState("one")
+
+  useEffect(() => {
+    setTimeout(() => {
+      setcn("two")
+    }, 1350);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setcn("three")
+    }, 3800);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setcn("four")
+    }, 5400);
+  }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowFinalDiv(true)
+    }, 6500);
+  }, []);
+
+  return showfinaldiv ? (
     <div className="relative mt-16 w-full ">
       <div className=" w-[958px] h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
       <main className="main h-[80vh] ">
@@ -17,7 +46,7 @@ export const Hero = () => {
       </main>
 
       <div className="absolute left-[50%] bottom-10 -translate-x-[50%] ">
-      <div className=" relative group z-[999] h-[150px] justify-between items-center flex">
+        <div className=" relative group z-[999] h-[150px] justify-between items-center flex">
           <Image
             src={buttonPattern}
             alt="Resnet Solutions"
@@ -32,6 +61,13 @@ export const Hero = () => {
           </button>
         </div>
       </div>
+    </div>
+  ) : (
+    <div className="relative mt-16 w-full ">
+      <div className=" w-[958px] h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
+      <main className="mainball h-[80vh] ">
+        <div className={cn}></div>
+      </main>
     </div>
   );
 };
