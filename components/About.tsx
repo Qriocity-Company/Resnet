@@ -3,12 +3,15 @@ import React from "react";
 import "@/styles/About.css";
 import Image from "next/image";
 import buttonPattern from "../assets/contact-btn-img.png";
+import AboutImage from "../assets/aboutimage.png"
 
 export const About = () => {
  
   return (
-    <div className="flex justify-between w-5/6 mx-auto">
-      <div className="max-w-xl w-full text-red-500">card</div>
+    <div className="flex justify-between items-center w-5/6 mx-auto">
+      <div className="max-w-xl w-full text-red-500">
+        <Image src={AboutImage} className="w-[4197px] " />
+      </div>
       <div className="max-w-2xl">
         <div className="text-[65px] font-[700] w-full ">
           <span className="">We Make Your </span><br/>
