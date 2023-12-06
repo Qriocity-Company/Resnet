@@ -14,6 +14,9 @@
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
+  .card-clicked .flip-card-inner{
+    transform: rotateY(-180deg);
+  }
   
   .flip-card-front, .flip-card-back {
     position: absolute;
@@ -34,4 +37,21 @@
     background-color: black;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  .card-clicked{
+    animation: topAndScale 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    width: 50%;
+  }
+
+  @keyframes topAndScale {
+    100%{
+      transform:scale(1.5);
+      z-index: 5;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      /* transform: ; */
+    }    
   }

@@ -1,0 +1,27 @@
+
+
+.wordspin {
+    display: block;
+    animation : spain_words 15s  infinite  ;
+}
+
+@keyframes spain_words {
+   
+    0%{
+        transform: translateY(80%);
+    }
+    25%{
+        transform: translateY(2%);
+    }
+    50%{
+        transform: translateY(-100%);
+    }
+    75%{
+        transform:  translateY(-200%);
+    }
+    100%{ 
+        transform:  translateY(-300%);
+    }
+
+
+}
