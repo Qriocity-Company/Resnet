@@ -13,6 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily:{
+        Poppins:["Poppins","sans-serif"],
+        Raleway:["Raleway","sans-serif"],
+        Roboto:["Roboto","sans-serif"],
+        Inter:["Inter","sans-serif"]
+      }
     },
   },
   plugins: [],

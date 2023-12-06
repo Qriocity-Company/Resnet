@@ -1,11 +1,10 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import buttonPattern from "../assets/button-pattern.png"
+"use client";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import buttonPattern from "../assets/button-pattern.png";
 
 export const About = () => {
-
-  const wordArray = ["Thrive", "Flourish", "Scale 10x"]
+  const wordArray = ["Thrive", "Flourish", "Scale 10x"];
   const [Words, setWords] = useState(wordArray[0]);
 
   useEffect(() => {
@@ -23,28 +22,37 @@ export const About = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-
   return (
     <div>
       <div>card</div>
-    <div className='max-w-xl'>
-    <div className='text-[65px] font-[700] w-full' >
-        <span>We Make Your Business</span>
-        <span className='font-semibold  text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center' >{Words}
-        </span>
+      <div className="max-w-xl">
+        <div className="text-[65px] font-[700] w-full">
+          <span>We Make Your Business</span>
+          <span className="font-semibold  text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
+            {Words}
+          </span>
+        </div>
+        <div className="text-[24px]">
+          Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla
+          tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus
+          fringilla tellus. Lorem ipsum dolor sit amet consectetur.{" "}
+        </div>
 
+        <div className="mt-5 relative w-fit group">
+          <Image
+            src={buttonPattern}
+            alt="Resnet Solutions"
+            className="group-hover:scale-[.8] ease-in-out duration-700"
+            width={250}
+          />
+          <button
+            className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500"
+            style={{ transform: "translate(-50% , -50%)" }}
+          >
+            Contact Us
+          </button>
+        </div>
       </div>
-      <div className='text-[24px]'>Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. </div>
-      
-      <div className='mt-5 relative w-fit group' >
-      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700' width={250} />
-  <button className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</button>
-</div>
-
     </div>
-
-
-
-    </div>
-  )
-}
+  );
+};
