@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div className="flex justify-between items-center w-5/6 mx-auto">
       <div className="max-w-xl w-full text-red-500">
-        <Image src={AboutImage} className="w-[4197px] " />
+        <Image src={AboutImage} alt="About" width={100} height={100} className="w-[4197px] " />
       </div>
       <div className="max-w-2xl">
         <div className="text-[65px] font-[700] w-full ">
