@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import buttonPattern from "../assets/button-pattern.png";
+import buttonPattern from "../assets/contact-btn-img.png";
 
 export const About = () => {
   const wordArray = ["Thrive", "Flourish", "Scale 10x"];
@@ -28,7 +28,7 @@ export const About = () => {
       <div className="max-w-xl">
         <div className="text-[65px] font-[700] w-full">
           <span>We Make Your Business</span>
-          <span className="font-semibold  text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
+          <span className="font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
             {Words}
           </span>
         </div>
@@ -46,7 +46,7 @@ export const About = () => {
             width={250}
           />
           <button
-            className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500"
+            className=" absolute top-1/2 left-1/2  text-[#FF001D]   px-4 py-[10px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500"
             style={{ transform: "translate(-50% , -50%)" }}
           >
             Contact Us
