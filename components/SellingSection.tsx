@@ -49,7 +49,7 @@ const contentsRight = [
     }, 100000); // Change the interval as needed
 
     return () => clearInterval(interval);
-  }, []);
+  }, [contentsLeft.length]);
   return (
     <div className='relative w-full py-20'>
 

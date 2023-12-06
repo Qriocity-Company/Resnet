@@ -37,7 +37,7 @@ export const CaseStories = () => {
       <div>
         <h1 className='font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>Discover Success Stories</h1>
         <div className='flex flex-col items-center mt-4'>
-          <div>Turning Challenges into Triumphs with <span className='font-semibold text-red-500'>Resnet's</span> AI &</div>
+          <div>Turning Challenges into Triumphs with <span className='font-semibold text-red-500'>Resnet &apos s</span> AI &</div>
           <div className=''>
             Machine Learning Solutions
           </div>
