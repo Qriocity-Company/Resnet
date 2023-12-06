@@ -27,46 +27,51 @@ body{
   font-size: large;
 }
 
-.top-left-slide{
-  left: 50%;
-  top: 0;
-  animation: moveAnimation 3s infinite ease-in-out;
+.first-slide{
+  filter: blur(10px);
+  animation: xAxis 6s  infinite;
 }
-.middle-slide{
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}
-.bottom-left-slide{
-  left: -10%;
-  bottom: 0;
+.first-slide-y{
+  animation: yAxis 6s  infinite;
 }
 
-
-@keyframes moveAnimation {
-  0% {
-    left: 50%;
-    top: 0%;
-    
-  }
+@keyframes xAxis {
   25% {
-    left: 100%;
-    top: 50%;
+    animation-timing-function: linear;
+    transform: translateX(100%);
+    filter: none;
+  }
+  50%{
+    transform: translateX(0%);
+    animation-timing-function:linear;
+  }
+  75%{
+    transform: translateX(-50%);
+    animation-timing-function: linear;
     
   }
-  50% {
-    left: 50%;
-    top: 100%;
-    
+  100%{
+    transform: translateX(0%);
+    animation-timing-function: linear;
   }
-  75% {
-    left: 0;
-    top: 50%;
-    
+}
+
+
+@keyframes yAxis {
+  25% {
+    animation-timing-function: linear;
+    transform: translateY(150px);
   }
-  100% {
-    left: 50%;
-    top: 0;
-   
+  50%{
+    transform: translateY(300px);
+    animation-timing-function:linear;
+  }
+  75%{
+    transform: translateY(150px);
+    animation-timing-function: ease-in
+  }
+  100%{
+    transform: translateY(0);
+    animation-timing-function: ease-in;
   }
 }

@@ -17,16 +17,19 @@ export const Services = () => {
 
         <div className='left-slides w-[50%] relative'>
 
-          {/* <div className='content-slide top-left-slide'>
-            <h2>
-              We Do the hardwork for you
-            </h2>
-            <p className=''>
-            1st slide 1st slide 1st slide business with AI and ML? Contact us today for a consultation. Our team is eager to understand your unique challenges and design a tailor-made solution that propels your business into the future.vv
-            </p>
+          <div className='first-slide-y'>
+            <div className='content-slide first-slide'>
+              <h2>
+                We Do the hardwork for you
+              </h2>
+              <p className=''>
+              1st slide 1st slide 1st slide business with AI and ML? Contact us today for a consultation. Our team is eager to understand your unique challenges and design a tailor-made solution that propels your business into the future.vv
+              </p>
+            </div>
           </div>
 
-          <div className='content-slide middle-slide'>
+          
+          {/* <div className='content-slide middle-slide'>
             <h2>
               We Do the hardwork for you
             </h2>
@@ -35,7 +38,7 @@ export const Services = () => {
             </p>
           </div>
           
-          <div className='content-slide bottom-left-slide'>
+          <div className='content-slide bottom-left-slide animated-div'>
             <h2>
               We Do the hardwork for you
             </h2>
