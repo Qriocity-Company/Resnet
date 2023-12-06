@@ -1,7 +1,9 @@
 import React from 'react'
-
+import "@/styles/Hero.css"
 export const Hero = () => {
   return (
-    <div>Hero</div>
+    <main className='main mt-20 w-full' >
+        <h1>Hello world </h1>
+    </main>
   )
 }
