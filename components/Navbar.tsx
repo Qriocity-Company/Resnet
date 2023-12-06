@@ -13,7 +13,7 @@ export const Navbar = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
+  
   return (
     <div className=" flex flex-row justify-between  w-full items-center py-4 px-4  sm:px-16 md:px-[48px] fixed top-0 max-w-[1440px]  md:text-[12px] lg:text-[16px] z-20  backdrop-blur-[0.5rem]">
       <a href="/">

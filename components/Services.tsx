@@ -12,7 +12,7 @@ export const Services = () => {
           </div>
         </div>
       </div>
-
+       
       <div className='relative flex py-20 w-full h-[100vh]'>
 
         <div className='left-slides w-[50%] relative'>
