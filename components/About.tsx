@@ -1,36 +1,25 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import "@/styles/About.css";
 import Image from "next/image";
 import buttonPattern from "../assets/contact-btn-img.png";
 
 export const About = () => {
-  const wordArray = ["Thrive", "Flourish", "Scale 10x"];
-  const [Words, setWords] = useState(wordArray[0]);
-
-  useEffect(() => {
-    let currentIndex = 0;
-
-    const intervalId = setInterval(() => {
-      // Update state with the current word
-      setWords(wordArray[currentIndex]);
-
-      // Move to the next word in the array
-      currentIndex = (currentIndex + 1) % wordArray.length;
-    }, 2000); // Adjust the interval duration as needed (e.g., 2000 milliseconds for 2 seconds)
-
-    // Cleanup the interval when the component unmounts
-    return () => clearInterval(intervalId);
-  }, []);
-
+ 
   return (
-    <div>
-      <div>card</div>
-      <div className="max-w-xl">
-        <div className="text-[65px] font-[700] w-full">
-          <span>We Make Your Business</span>
-          <span className="font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
-            {Words}
-          </span>
+    <div className="flex justify-between w-5/6 mx-auto">
+      <div className="max-w-xl w-full text-red-500">card</div>
+      <div className="max-w-2xl">
+        <div className="text-[65px] font-[700] w-full ">
+          <span className="">We Make Your </span><br/>
+         <div className="flex h-[98px] overflow-hidden ease-in-out ">
+         <p className="w-fit">Business</p>
+          <div className=" mt-0 font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text  ps-3 ">
+              <span className="wordspin  block" >Thrive</span>
+              <span className="wordspin block">Flourish</span>
+              <span className="wordspin block">Scale 10x</span>
+          </div>
+         </div>
         </div>
         <div className="text-[24px]">
           Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla
@@ -51,6 +40,7 @@ export const About = () => {
           >
             Contact Us
           </button>
+        
         </div>
       </div>
     </div>
