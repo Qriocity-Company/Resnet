@@ -20,19 +20,19 @@ export const Hero = () => {
 
   return showfinaldiv ? (
     <div className="relative mt-16 w-full ">
-      <div className=" w-[958px] h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
-      <main className="main h-[80vh] ">
-        <h1 className="w-[941px]  text-center z-10 mt-20  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent  text-[65px] font-bold font-Raleway leading-[80px]">
+      <div className=" w-[300px] h-[400px] lg:w-[958px] lg:h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
+      <main className="main lg:h-[80vh] h-[50vh]">
+        <h1 className="w-[350px] md:w-[600px] lg:w-[941px]  text-center z-10 mt-20  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-[24px] lg:text-[65px] font-bold font-Raleway lg:leading-[80px]">
           Artificial Intelligence & Machine Learning Consulting Services{" "}
         </h1>
-        <p className="w-[672px] h-[83px] text-center bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-2xl font-medium font-['Poppins']">
+        <p className=" w-[350px] md:w-[672px] h-[83px] text-center bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-12px lg:text-2xl font-medium font-['Poppins']">
           Transforming Possibilities into Realities: Elevate Your Future with
           Our AI & ML Consulting Excellence
         </p>
       </main>
 
       <div className="absolute left-[50%] bottom-10 -translate-x-[50%] ">
-        <div className=" relative group z-[999] h-[150px] justify-between items-center flex">
+        <div className=" relative group z-[999] h-[150px] w-[280px] justify-between items-center flex">
           <Image
             src={buttonPattern}
             alt="Resnet Solutions"
