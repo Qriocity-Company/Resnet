@@ -1,3 +1,5 @@
+"use client";
+import { sendEmail } from "@/actions/sendMail";
 import React from 'react'
 import '../styles/ContactUs.css'
 import fb from '../assets/fb.png'
@@ -10,7 +12,16 @@ interface ContactUsProps{
 }
 
 const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
-
+    async function onSubmit(event: any) {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        console.log(formData.get("senderEmail"));
+        const { data, error } = await sendEmail(formData);
+        if (error) {
+          alert(error);
+          return;
+        }
+      }
   return (
     <div className='modal-outer fixed top-0 left-0 h-[100vh] w-[100vw] z-20 flex justify-center items-center'>
         
@@ -35,25 +46,24 @@ const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
             </div>
             <div className='w-[100%] md:w-[50%] border-2 border-[#5967E7] p-4'>
 
-                <form action="" className='flex flex-col gap-5 md:gap-6  bg-white p-4 md:p-12 text-[#08081B]'>
+                <form onSubmit={onSubmit} className='flex flex-col gap-5 md:gap-6  bg-white p-4 md:p-12 text-[#08081B]'>
 
                     <div className='form-component'>
                         <input type="text" name='name' required placeholder=' '/>
                         <label htmlFor="name">Full Name</label>
                     </div>
                     <div className='form-component'>
-                        <input type="email" name='email' required placeholder=' '/>
+                        <input type="email" name='senderEmail' required placeholder=' '/>
                         <label htmlFor="email">Email</label>
                     </div>
                     <div className='form-component'>
-                        <input type="number" name='number' required placeholder=' '/>
+                        <input type="number" name='Phonenumber' required placeholder=' '/>
                         <label htmlFor="number">Phone Number</label>
                     </div>
                     <div className='form-component'>
                         <textarea name='message' required placeholder=' ' rows={6}/>
                         <label htmlFor="message">Message</label>
                     </div>
-
                 </form>
 
             </div>
