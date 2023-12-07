@@ -53,20 +53,20 @@ const contentsRight = [
   return (
     <div className='relative w-full py-20'>
 
-      <h1 className='font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>People Love Us</h1>
+      <h1 className='font-bold text-5xl text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>People Love Us</h1>
 
-      <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-red-500'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-red-500'>Decade</span> of Trust and Innovation in the AI & Machine Learning Industry!</p>
+      <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-[#FF001D]'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-[#FF001D]'>Decade</span> of Trust and Innovation in the AI & Machine Learning Industry!</p>
 
 
-      <div className='mt-24 flex justify-center w-full'>
+      <div className='mt-[28vh] md:mt-24 flex justify-center w-full'>
 
-        <div className='p-4 pr-6 h-[35vh] w-[50%] lg:w-[40%] relative overflow-hidden'>
+        <div className='p-4 pr-6 h-[40vh] md:h-[35vh] w-[50%] lg:w-[40%] relative overflow-hidden'>
           {
             contentsLeft.map((element,index)=>{
               return (
-                <div className={`content wordspin h-[35vh]`} key={index} >
-                  <h2 className='text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#39A94B] from-10% via-[#6cff85] via-40% to-[#00FFFF] to-100% font-extrabold text-end  pb-2 lg:pb-6'>{element.heading}</h2>
-                  <p className='text-xl text-white text-end'>
+                <div className={`content wordspin h-[40vh] md:h-[35vh]`} key={index} >
+                  <h2 className='text-xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#39A94B] from-10% via-[#6cff85] via-40% to-[#00FFFF] to-100% font-extrabold text-end  pb-2 lg:pb-6'>{element.heading}</h2>
+                  <p className='text-sm md:text-xl text-white text-end'>
                   {element.content}
                   </p>
                 </div>
@@ -75,13 +75,13 @@ const contentsRight = [
           }
         </div>
 
-        <div className='pl-6 p-4 border-s-[3px] border-gray-700 h-[35vh] w-[50%] lg:w-[40%]  relative overflow-hidden'>
+        <div className='pl-6 p-4 border-s-[3px] border-gray-700 h-[40vh] md:h-[35vh] w-[50%] lg:w-[40%]  relative overflow-hidden'>
           {
             contentsRight.map((element,index)=>{
               return (
-                <div className={`content wordspin h-[35vh]`} key={index} >
-                  <h2 className='text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF]  to-[#39A94B] font-extrabold text-start pb-2 lg:pb-6'>{element.heading}</h2>
-                  <p className='text-xl text-white text-start'>
+                <div className={`content wordspin h-[40vh] md:h-[35vh]`} key={index} >
+                  <h2 className='text-xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF]  to-[#39A94B] font-extrabold text-start pb-2 lg:pb-6'>{element.heading}</h2>
+                  <p className='text-sm md:text-xl text-white text-start'>
                   {element.content}
                   </p>
                 </div>

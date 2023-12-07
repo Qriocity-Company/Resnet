@@ -83,11 +83,10 @@ export const Navbar = () => {
             Our Services
           </a> */}
           
-          <div className='mt-5 relative w-fit group' >
-      <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700' width={250} />
-  <div  
-            onClick={()=>{toggleMenu();  setContactModal(true); document.body.style.overflow="hidden"}}  className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</div>
-</div>
+          <div className='mt-5 relative group w-[300px]' >
+        <div  
+            onClick={()=>{toggleMenu();  setContactModal(true); document.body.style.overflow="hidden"}}  className=" absolute top-1/2  right-0 text-[#FF001D]  px-4 py-[10px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500 w-[200px] " >Contact Us</div>
+        </div>
         </div>
       )}
       

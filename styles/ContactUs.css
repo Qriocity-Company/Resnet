@@ -13,7 +13,7 @@
     padding-top: 1rem;
 }
 .form-component label{
-    color: #08081B;
+    color: white;
     position: absolute;
     left: 0;
     bottom: 30%;
@@ -23,13 +23,20 @@
     
 }
 .form-component input{
-    border-bottom: 1px solid #08081B;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: #08081B;
     padding: 0.75rem 0.5rem;
     width: 100%;
     outline: none;
+    ::placeholder{
+        color: white;
+    }
 }
 .form-component textarea{
-    border-bottom: 1px solid #08081B;
+    border-bottom: 1px solid white;
+    background-color: #08081B;
+    border-bottom: 1px solid white;
     padding: 0.5rem 0.5rem;
     width: 100%;
     outline: none;

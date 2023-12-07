@@ -14,7 +14,7 @@ export const Footer = () => {
     <footer className='py-6 pb-24 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden'>
 
       {/* grid */}
-      <div className='md:block lg:flex gap-12 p-8'>
+      <div className='md:block lg:flex gap-12 p-2 md:p-8'>
 
         <div className='block md:flex w-full md:gap-6 lg:gap-12'>
           {/* company description */}
@@ -44,8 +44,8 @@ export const Footer = () => {
           </div>
         </div>
         {/* Links div */}
-        <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-0 lg:w-[40%] flex flex-col gap-6'>
-          <div className='flex justify-between gap-2 footer-links sm:text-xs md:text-base'>
+        <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-0 lg:w-[40%] hidden md:flex flex-col gap-6'>
+          <div className=' w-full flex justify-between gap-2 footer-links sm:text-xs md:text-base'>
             <a href="">Home</a>
             <a href="">Services</a>
             <a href="">About Us</a>
@@ -62,7 +62,7 @@ export const Footer = () => {
       </div>
 
       <div className='text-center mt-8'>
-        &copy; - Resnet Pvt Ltd All Right Reserved
+        &copy; - 2023 Resnet Pvt Ltd | All Right Reserved
       </div>
       <div className="absolute  w-[375px] h-64 bg-red-600 rounded-full blur-[160px]  left-[30%] -bottom-[45%]"></div>
       <div className="absolute  w-[275px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[60%] -bottom-[25%]"></div>

@@ -33,7 +33,7 @@ export const About:React.FC = () => {
           fringilla tellus. Lorem ipsum dolor sit amet consectetur.{" "}
         </div>
 
-        <div className="mt-5 relative w-fit group">
+        <div className="mt-5 relative w-fit group left-[50%] translate-x-[-50%]">
           <Image
             src={buttonPattern}
             alt="Resnet Solutions"

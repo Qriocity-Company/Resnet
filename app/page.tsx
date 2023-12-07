@@ -12,7 +12,7 @@ export default function Home() {
     <main className=' w-full flex flex-col justify-center items-center max-w-[350px] md:max-w-[760px] lg:max-w-[1440px]'>
       <Navbar/>
       <Hero/>
-      <Services/>
+      {/* <Services/> */}
       <About/>
       <CaseStories/>
       <Testimonial/>
