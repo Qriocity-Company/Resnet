@@ -14,25 +14,8 @@ export const Hero = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setcn("two")
-    }, 1350);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setcn("three")
-    }, 3800);
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setcn("four")
-    }, 5400);
-  }, []);
-  useEffect(() => {
-    setTimeout(() => {
       setShowFinalDiv(true)
-    }, 6500);
+    }, 3000);
   }, []);
 
   return showfinaldiv ? (

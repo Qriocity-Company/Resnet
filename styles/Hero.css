@@ -52,33 +52,35 @@
     inset 0 -12px 15px 0px rgba(255, 0, 0, 0.5);
   background: linear-gradient(180deg, #ff001d 0%, #00004a 100%);
   border-radius: 50%;
-  animation: bounce 600ms cubic-bezier(0.7, 0, 1, 1) alternate infinite;
+  animation: bounce 3800ms cubic-bezier(0.7, 0, 1, 1) alternate infinite;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translate(0px, -22vh);
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  75% {
-    height: 105px;
-    width: 94px;
-    margin: 20px;
-    box-shadow: 0 24vh 10px 0 rgba(255, 72, 72, 0),
-      inset 0 15px 10px 0px rgba(237, 0, 0, 0.2),
-      inset 0 -12px 15px 0px rgba(255, 0, 0, 0.5);
+
+  10%, 30%, 60%, 90% {
+    transform: translateY(-200px);
   }
-  100% {
-    transform: translate(0px, 22vh);
-    height: 100px;
-    width: 90px;
-    margin: 10px;
-    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2),
-      inset 0 5px 4px 0px rgba(255, 255, 255, 0.2),
-      inset 0 -5px 9px 0px rgba(0, 0, 0, 0.5);
+  40%{
+    transform: translateY(-150px);
+    width: 900px;
+    height: 900px;
+  }
+
+  70% {
+    transform: translateY(-150px);
+    width: 1800px;
+    height: 1800px;
+  }
+
+  80% {
+    transform: translateY(-100px);
+    width: 0;
+    height: 0;
   }
 }
-
-
 
 .two {
   margin: 20px;
