@@ -4,7 +4,10 @@ import React, { useState, useEffect } from "react";
 import "@/styles/Hero.css";
 import Image from "next/image";
 import buttonPattern from "../assets/contact-btn-img.png";
+import ContactUs from "./ContactUs";
 export const Hero = () => {
+  const [contactModal,setContactModal] = useState(false)
+
   const [showfinaldiv, setShowFinalDiv] = useState(false);
   const [b1, setB1] = useState(false);
   const [cn ,setcn] =useState("one")
@@ -56,11 +59,13 @@ export const Hero = () => {
           <button
             className=" absolute top-1/2 left-1/2  text-[#FF001D]  px-4 py-[8px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500"
             style={{ transform: "translate(-50% , -50%)" }}
+            onClick={()=>{setContactModal(true); document.body.style.overflow="hidden"}} 
           >
             Contact Us
           </button>
         </div>
       </div>
+      { contactModal && <ContactUs setContactModal={setContactModal}/>}
     </div>
   ) : (
     <div className="relative mt-16 w-full ">

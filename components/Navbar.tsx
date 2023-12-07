@@ -6,9 +6,11 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { FaArrowRight } from "react-icons/fa";
 import logo from '../assets/Resnet Logo White.png'
 import buttonPattern from "../assets/contact-btn-img.png"
+import ContactUs from './ContactUs';
 export const Navbar = () => {
 
   const [showMenu, setShowMenu] = useState(false);
+  const [contactModal,setContactModal] = useState(false)
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -32,16 +34,13 @@ export const Navbar = () => {
         <a href="/caseStudy/documentation" >
           Case Studies
         </a>
-        <a
-          href="/contact"
-          className='relative'
-        >
+        
           <div className=' relative  group' >
       <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700 h-[60px]' width={250} />
-  <button className=" absolute top-1/2 left-1/2  text-[#FF001D]  px-4 py-[8px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</button>
+  <button className=" absolute top-1/2 left-1/2  text-[#FF001D]  px-4 py-[8px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}}  onClick={()=>{setContactModal(true); document.body.style.overflow="hidden"}} >Contact Us</button>
 </div>
-          {/* <Image src={buttonPattern} alt='' height={80} width={160} className='absolute  h-[80px] w-[160px] top-0 z-1'></Image> */}
-        </a>
+        
+        
       </div>
       <div className="md:hidden flex items-center ml-auto">
         {showMenu ? (
@@ -86,11 +85,13 @@ export const Navbar = () => {
           
           <div className='mt-5 relative w-fit group' >
       <Image src={buttonPattern} alt='Resnet Solutions' className='group-hover:scale-[.8] ease-in-out duration-700' width={250} />
-  <a  href="/contact"
-            onClick={toggleMenu} className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</a>
+  <div  
+            onClick={()=>{toggleMenu();  setContactModal(true); document.body.style.overflow="hidden"}}  className=" absolute top-1/2 left-1/2  text-red-500  px-4 py-[10px] bg-[#08081B] border-2 border-red-500 group-hover:bg-red-500 group-hover:text-white ease-in-out duration-500" style={{transform : "translate(-50% , -50%)"}} >Contact Us</div>
 </div>
         </div>
       )}
+      
+      { contactModal && <ContactUs setContactModal={setContactModal}/>}
     </div>
   )
 }

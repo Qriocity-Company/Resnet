@@ -1,12 +1,15 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import "@/styles/About.css";
 import Image from "next/image";
 import buttonPattern from "../assets/contact-btn-img.png";
 import AboutImage from "../assets/aboutimage.png"
+import ContactUs from "./ContactUs";
 
-export const About = () => {
- 
+export const About:React.FC = () => {
+  
+  const [contactModal,setContactModal] = useState(false)
+
   return (
     <div className="flex justify-between items-center w-5/6 mx-auto">
       <div className="max-w-xl w-full text-red-500">
@@ -40,12 +43,15 @@ export const About = () => {
           <button
             className=" absolute top-1/2 left-1/2  text-[#FF001D]   px-4 py-[10px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500"
             style={{ transform: "translate(-50% , -50%)" }}
+            onClick={()=>{setContactModal(true); document.body.style.overflow="hidden"}}
           >
             Contact Us
           </button>
         
         </div>
       </div>
+
+      { contactModal && <ContactUs setContactModal={setContactModal}/>}
     </div>
   );
 };

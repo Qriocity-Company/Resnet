@@ -42,7 +42,7 @@
   .card-clicked{
     animation: topAndScale 0.5s ease-in-out;
     animation-fill-mode: forwards;
-    width: 50%;
+    /* width: 50%; */
   }
 
   @keyframes topAndScale {

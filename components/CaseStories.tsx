@@ -35,12 +35,9 @@ export const CaseStories = () => {
   return (
     <div className='py-8 w-full'>
       <div>
-        <h1 className='font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>Discover Success Stories</h1>
+        <h1 className='font-semibold text-3xl md:text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>Discover Success Stories</h1>
         <div className='flex flex-col items-center mt-4'>
-          <div>Turning Challenges into Triumphs with <span className='font-semibold text-red-500'>Resnet &apos s</span> AI &</div>
-          <div className=''>
-            Machine Learning Solutions
-          </div>
+          <div className='text-center md:w-[60%] lg:w-[30%]'>Turning Challenges into Triumphs with <span className='font-semibold text-red-500'>Resnet&apos;s</span> AI & Machine Learning Solutions</div>
         </div>
       </div>
 
@@ -51,11 +48,11 @@ export const CaseStories = () => {
         <div className='relative w-[80%] left-[8%]'>
 
         
-        <div onClick={()=>cardClicked(0)} className={clicked0?' h-[450px] w-[30%] rounded-xl absolute card-clicked':`flip-card h-[450px] w-[30%] rounded-xl absolute left-[0%] cursor-pointer`}>
+        <div onClick={()=>cardClicked(0)} className={clicked0?' h-[70vh] w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute card-clicked':`flip-card h-[300px] lg:h-[450px] w-[100%] md:w-[30%] rounded-xl absolute left-[0%] cursor-pointer`}>
 
-          <div className="flip-card-inner h-[450px] w-full rounded-xl">
+          <div className="flip-card-inner  w-full rounded-xl">
 
-            <div className=" flip-card-front h-[450px] w-full rounded-xl" style={clicked0?{display:'none'}:{}}>
+            <div className=" flip-card-front w-full rounded-xl" style={clicked0?{display:'none'}:{}}>
               <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
             </div>
 
@@ -77,10 +74,10 @@ export const CaseStories = () => {
 
           </div>
         </div>
-        <div onClick={()=>cardClicked(1)} className={clicked1?' h-[450px] w-[30%] rounded-xl absolute  left-[25%] cursor-pointer card-clicked':`flip-card h-[450px] w-[30%] rounded-xl absolute left-[25%] cursor-pointer`}>
-          <div className="flip-card-inner h-[450px] w-full rounded-xl">
+        <div onClick={()=>cardClicked(1)} className={clicked1?' h-[70vh] w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute  left-[25%] cursor-pointer card-clicked':`flip-card h-[300px] lg:h-[450px] rounded-xl absolute  w-full md:w-[30%]  top-[15%] md:top-0 left-0 md:left-[25%] cursor-pointer`}>
+          <div className="flip-card-inner w-full rounded-xl">
 
-            <div className="flip-card-front h-[450px] w-full rounded-xl" style={clicked1?{display:'none'}:{}}>
+            <div className="flip-card-front w-full rounded-xl" style={clicked1?{display:'none'}:{}}>
               <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
             </div>
             <div className="flip-card-back rounded-xl" style={clicked0?{display:'block'}:{}}>
@@ -99,10 +96,10 @@ export const CaseStories = () => {
 
           </div>
         </div>
-        <div onClick={()=>cardClicked(2)} className={clicked2?' h-[450px] w-[30%] rounded-xl absolute left-[50%] cursor-pointer card-clicked ':`flip-card h-[450px] w-[30%] rounded-xl absolute left-[50%] cursor-pointer`}>
-          <div className="flip-card-inner h-[450px] w-full rounded-xl">
+        <div onClick={()=>cardClicked(2)} className={clicked2?' h-[70vh] w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute left-[50%] cursor-pointer card-clicked ':`flip-card h-[300px] lg:h-[450px]  w-full md:w-[30%]  top-[30%] md:top-0 left-0 rounded-xl absolute md:left-[50%] cursor-pointer`}>
+          <div className="flip-card-inner w-full rounded-xl">
 
-            <div className="flip-card-front h-[450px] w-full rounded-xl" style={clicked2?{display:'none'}:{}}>
+            <div className="flip-card-front w-full rounded-xl" style={clicked2?{display:'none'}:{}}>
               <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
             </div>
             <div className="flip-card-back rounded-xl" style={clicked2?{display:'block'}:{}}>
@@ -121,10 +118,10 @@ export const CaseStories = () => {
 
           </div>
         </div>
-        <div onClick={()=>cardClicked(3)} className={clicked3?' h-[450px] w-[30%] rounded-xl absolute left-[75%] cursor-pointer card-clicked':`flip-card h-[450px] w-[30%] rounded-xl absolute left-[75%] cursor-pointer`}>
-          <div className="flip-card-inner h-[450px] w-full rounded-xl">
+        <div onClick={()=>cardClicked(3)} className={clicked3?' h-[70vh] w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute left-[75%] cursor-pointer card-clicked':`flip-card h-[300px] lg:h-[450px]  w-full md:w-[30%]  top-[45%] md:top-0 left-0 rounded-xl absolute md:left-[75%] cursor-pointer`}>
+          <div className="flip-card-inner w-full rounded-xl">
 
-            <div className="flip-card-front h-[450px] w-full rounded-xl" style={clicked3?{display:'none'}:{}}>
+            <div className="flip-card-front w-full rounded-xl" style={clicked3?{display:'none'}:{}}>
               <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
             </div>
             <div className="flip-card-back rounded-xl" style={clicked3?{display:'block'}:{}}>

@@ -1,0 +1,57 @@
+.modal-outer{
+    background-color: rgba(8, 8, 27, 0.7);
+}
+.modal-inner{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 4px; 
+  
+}
+
+.form-component{
+    position: relative;
+    padding-top: 1rem;
+}
+.form-component label{
+    color: #08081B;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: larger;
+    
+}
+.form-component input{
+    border-bottom: 1px solid #08081B;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+    outline: none;
+}
+.form-component textarea{
+    border-bottom: 1px solid #08081B;
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    outline: none;
+    resize: none;
+}
+.form-component label:last-child{
+    top: 20%;
+}
+
+input:not(:placeholder-shown) ~ label,
+input:focus ~ label
+{
+  transform: translateY(-20px);
+  
+}
+textarea:not(:placeholder-shown) ~ label,
+textarea:focus ~ label{
+    transform: translateY(-50px);
+}
+
+@media (max-width: 768px) {
+    .form-component input{
+        padding: 0.25rem;
+    }
+}
