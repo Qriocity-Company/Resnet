@@ -23,7 +23,7 @@ export const Services = () => {
         </div>
       </div>
        
-      <div className='absolute top-[-5%] flex gap-24 w-full h-[140vh]'>
+      <div className='left-0 absolute top-[-5%] flex gap-24 w-full h-[140vh] overflow-hidden'>
 
         <div className='left-slides w-[50%] relative'>
 
