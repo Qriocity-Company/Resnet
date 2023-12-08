@@ -50,12 +50,13 @@ export const Hero = () => {
             >
               Contact Us
             </button>
-            {contactModal && <ContactUs setContactModal={setContactModal}/> }
+          
           </div>
         </div>
       ) : (
         ""
       )}
+        {contactModal && <ContactUs setContactModal={setContactModal}/> }
     </div>
   );
 };
