@@ -3,11 +3,14 @@ import { sendEmail } from "@/actions/sendMail";
 import React from 'react'
 import '../styles/ContactUs.css'
 
-import ContactImg from '../assets/contact-us.png'
+import ContactTexture from '../assets/contact-us-texture.png'
+import ContactBackground from '../assets/contactbg.png'
 import Image from 'next/image'
 import close from '../assets/x-circle-fill.svg'
-import locationIcon from '../assets/location-icon.svg'
-import callIcon from '../assets/call-icon.svg'
+
+import name from '../assets/name.svg'
+import email from '../assets/email.svg'
+import phone from '../assets/phone.svg'
 
 import { FaFacebook ,FaInstagram ,FaLinkedin} from "react-icons/fa";
 
@@ -27,39 +30,35 @@ const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
         }
       }
   return (
-    <div className='modal-outer fixed top-0 left-0 md:h-[100vh] w-[100vw] z-20 flex justify-center md:items-center'>
+    <div className='modal-outer fixed top-0 left-0 h-[100vh] w-[100vw] z-10 flex justify-center items-center'>
         
-        <div className='modal-inner p-5 block md:flex w-[90%] md:w-[40%] relative md:mt-0 mt-8'>
-            <Image src={close} width={20} alt='X' className='absolute right-[3%] top-[2%] cursor-pointer z-30' onClick={()=>{setContactModal(false); document.body.style.overflow="auto"}}></Image>
-            <Image src={ContactImg} alt="." className="absolute z-20 top-0 left-0" ></Image>
-            <div className='w-[100%] md:w-[100%] p-4 mt-8 z-30'>
+        <div className='modal-inner relative rounded-[30px] w-[90%] md:w-auto  h-[50vh] md:h-auto'>
+            <Image src={ContactBackground} alt="" className="z-20 md:h-auto h-[50vh]"></Image>
+            <Image src={ContactTexture} alt="" className="absolute top-0 left-0 z-10 md:h-auto h-[50vh]"></Image>
 
-                <form onSubmit={onSubmit} className='flex flex-col gap-5 md:gap-4 p-4 md:p-6'>
+            <form className="form-container z-30 absolute left-0 top-0 h-full w-full flex flex-col gap-2 justify-center items-center">
+              <h2 className="text-xl md:text-4xl font-semibold ">Reach Out to Us</h2>
 
-                    <div className='form-component '>
-                        <input type="text" name='name' required placeholder=' '/>
-                        <label htmlFor="name">Full Name</label>
-                    </div>
-                    <div className='form-component'>
-                        <input type="email" name='senderEmail' required placeholder=' '/>
-                        <label htmlFor="email">Email</label>
-                    </div>
-                    <div className='form-component'>
-                        <input type="number" name='Phonenumber' required placeholder=' '/>
-                        <label htmlFor="number">Phone Number</label>
-                    </div>
-                    <div className='form-component'>
-                        <textarea name='message' required placeholder=' ' rows={6}/>
-                        <label htmlFor="message">Message</label>
-                    </div>
-
-                    <div>
-                        <button type="submit" className="hover:text-[#FF001D] hover:scale-110 hover:font-semibold hover:bg-white transition-all bg-[#FF001D] text-white py-[0.6rem] px-[1rem]">Send Message &gt;</button>
-                    </div>
-                </form>
-
-            </div>
-
+              <div className="form-component w-[70%] flex items-center gap-2">
+                <Image src={name} alt='Name' height={40} className="h-[20px] md:h-[40px]"></Image>
+                <input type="text" name="name" placeholder="Your Name" className="bg-transparent border-b-white border-b-2 p-2 mb-2 outline-none w-full md:text-base text-sm" />
+              </div>
+              <div className="form-component w-[70%] flex items-center gap-2">
+                <Image src={email} alt='Email' height={40} className="h-[20px] md:h-[40px]"></Image>
+                <input type="email" name="senderEmail" placeholder="Your Email" className="bg-transparent border-b-white border-b-2 p-2 mb-2 outline-none w-full md:text-base text-sm"/>
+              </div>
+              <div className="form-component w-[70%] flex items-center gap-2">
+                <Image src={phone} alt='Name' height={40} className="h-[20px] md:h-[40px]"></Image>
+                <input type="number" name="Phonenumber" placeholder="Your Phone Number" className="bg-transparent border-b-white border-b-2 p-2 mb-2 outline-none w-full md:text-base text-sm"/>
+              </div>
+              <div className="form-component w-[70%] flex items-center gap-2">
+                
+                <textarea name="message" placeholder="Message" className="bg-transparent border-b-white border-b-2 p-2 mb-2 outline-none w-full resize-none md:text-base text-sm" />
+              </div>
+              <div>
+                <button type="submit" className="hover:text-[#FF001D] hover:scale-110 hover:font-semibold hover:bg-white transition-all bg-[#FF001D] text-white py-[8px] px-[14px] md:py-[0.6rem] md:px-[1rem] flex items-center rounded-3xl text-sm md:text-base">Send Message &gt;</button>
+              </div>
+            </form>
         </div>
 
     </div>

@@ -1,44 +1,11 @@
 .modal-outer{
     background-color: rgba(8, 8, 27, 0.7);
+    
 }
 .modal-inner{
-    background-color: grey;
-    border-radius: 4px; 
-  
+    background-color: #1E1E1E;
 }
 
-.form-component{
-    position: relative;
-    padding-top: 1rem;
-}
-.form-component label{
-
-    position: absolute;
-    left: 0;
-    bottom: 30%;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-    font-size: large;
-    
-}
-.form-component input{
-    color: rgb(104, 104, 104);
-    background-color: transparent;
-    padding: 0.75rem 0.5rem;
-    width: 100%;
-    outline: none;
-    
-}
-.form-component textarea{
-    
-    padding: 0.5rem 0.5rem;
-    width: 100%;
-    outline: none;
-    resize: none;
-}
-.form-component label:last-child{
-    top: 20%;
-}
 
 input:not(:placeholder-shown) ~ label,
 input:focus ~ label
