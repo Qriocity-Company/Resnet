@@ -35,8 +35,8 @@ const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
         <div className='modal-inner relative rounded-[30px] w-[90%] md:w-auto  h-[50vh] md:h-auto'>
             <Image src={ContactBackground} alt="" className="z-20 md:h-auto h-[50vh]"></Image>
             <Image src={ContactTexture} alt="" className="absolute top-0 left-0 z-10 md:h-auto h-[50vh]"></Image>
-
-            <form className="form-container z-30 absolute left-0 top-0 h-full w-full flex flex-col gap-2 justify-center items-center">
+            <Image src={close} height={20} alt="X" className="absolute right-[5%] top-[7%] z-50 cursor-pointer h-[20px]" onClick={()=>{setContactModal(false); document.body.style.overflow="auto"}}></Image>
+            <form className="form-container z-30 absolute left-0 top-0 h-full w-full flex flex-col gap-2 justify-center items-center" onSubmit={onSubmit}>
               <h2 className="text-xl md:text-4xl font-semibold ">Reach Out to Us</h2>
 
               <div className="form-component w-[70%] flex items-center gap-2">

@@ -33,15 +33,15 @@ export const Hero = () => {
 
       {showfinaldiv ? (
         <div className="absolute left-[50%]  -translate-x-[50%] bottom-10 btn-animation ">
-          <div className=" relative group z-[999] h-[150px] w-[280px] justify-between items-center flex">
+          <div className=" relative group z-[500] h-[150px] w-[280px] justify-between items-center flex">
             <Image
               src={buttonPattern}
               alt="Resnet Solutions"
-              className="group-hover:scale-[.8] ease-in-out duration-700 h-[100px]"
+              className="group-hover:scale-[.8] ease-in-out duration-700 h-[100px] z-[20]"
               width={300}
             />
             <button
-              className=" absolute top-1/2 left-1/2  text-[#FF001D]  px-4 py-[8px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500"
+              className=" absolute top-1/2 left-1/2  text-[#FF001D]  px-4 py-[8px] bg-[#08081B] border-2 border-[#FF001D] group-hover:bg-[#FF001D] group-hover:text-white ease-in-out duration-500 z-[1000] cursor-pointer"
               style={{ transform: "translate(-50% , -50%)" }}
               onClick={() => {
                 setContactModal(true);
@@ -50,6 +50,7 @@ export const Hero = () => {
             >
               Contact Us
             </button>
+            {contactModal && <ContactUs setContactModal={setContactModal}/> }
           </div>
         </div>
       ) : (
