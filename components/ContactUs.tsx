@@ -3,6 +3,7 @@ import { sendEmail } from "@/actions/sendMail";
 import React from 'react'
 import '../styles/ContactUs.css'
 
+import ContactImg from '../assets/contact-us.png'
 import Image from 'next/image'
 import close from '../assets/x-circle-fill.svg'
 import locationIcon from '../assets/location-icon.svg'
@@ -28,47 +29,12 @@ const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
   return (
     <div className='modal-outer fixed top-0 left-0 md:h-[100vh] w-[100vw] z-20 flex justify-center md:items-center'>
         
-        <div className='modal-inner p-5 block md:flex w-[90%] md:w-[80%] relative md:mt-0 mt-8'>
-            <Image src={close} width={20} alt='X' className='absolute right-[5%] md:left-[2%] top-[3%] md:top-[4%] cursor-pointer z-30' onClick={()=>{setContactModal(false); document.body.style.overflow="auto"}}></Image>
-            
-            <div className='w-[100%] md:w-[50%] pb-12 md:p-10 relative'>
-                <h1 className='text-white text-xl md:text-4xl font-semibold'>Get In Touch</h1>
-                <p className='text-base md:text-xl mt-4'>Reach Out to Us. We can make something awesome together</p>
+        <div className='modal-inner p-5 block md:flex w-[90%] md:w-[40%] relative md:mt-0 mt-8'>
+            <Image src={close} width={20} alt='X' className='absolute right-[3%] top-[2%] cursor-pointer z-30' onClick={()=>{setContactModal(false); document.body.style.overflow="auto"}}></Image>
+            <Image src={ContactImg} alt="." className="absolute z-20 top-0 left-0" ></Image>
+            <div className='w-[100%] md:w-[100%] p-4 mt-8 z-30'>
 
-                <div className='w-[100%] md:w-[50%] flex flex-col gap-4 mt-8 my-16 md:mt-16 '>
-                    <div className='flex gap-6 items-center'>
-                    <Image src={locationIcon} height={22} alt='Location' className='h-[22px]'></Image>
-                    <p>
-                    123, Gopal Street,
-                    Mylapore, Chennai - 600004,
-                    Tamil Nadu, India.
-                    </p>
-                    </div>
-                    <div className='flex gap-6 items-center'>
-                    <Image src={callIcon} alt='Location' height={22} className='h-[22px]'></Image>
-                    <p>
-                        (+91)-234-234-4321
-                    </p>
-                    </div>
-                </div>
-
-                <div className='flex gap-8 absolute bottom-[10%] md:bottom-[5%]'>
-                    <a href="" className='cursor-pointer'>
-                        
-                        <FaInstagram className='text-[#FF001D] text-4xl hover:text-white hover:scale-150 transition-all'/>
-                    </a>
-                    <a href="" className='cursor-pointer'>
-                        <FaFacebook className='text-[#FF001D] text-4xl hover:text-white hover:scale-150 transition-all'/>
-                    </a>
-                    <a href="" className='cursor-pointer'>
-                        <FaLinkedin className='text-[#FF001D] text-4xl hover:text-white hover:scale-150 transition-all'/>
-                       
-                    </a>
-                </div>
-            </div>
-            <div className='w-[100%] md:w-[50%] border-2 border-[#FF001D] p-4'>
-
-                <form onSubmit={onSubmit} className='flex flex-col gap-5 md:gap-6  bg-[#08081B] p-4 md:p-12 text-white'>
+                <form onSubmit={onSubmit} className='flex flex-col gap-5 md:gap-4 p-4 md:p-6'>
 
                     <div className='form-component '>
                         <input type="text" name='name' required placeholder=' '/>

@@ -11,7 +11,7 @@ export const About:React.FC = () => {
   const [contactModal,setContactModal] = useState(false)
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
+    <div className="my-8 flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
       <div className="max-w-xl w-full text-red-500">
         <Image src={AboutImage} alt="About" width={700} height={700} />
       </div>

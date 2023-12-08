@@ -2,8 +2,7 @@
     background-color: rgba(8, 8, 27, 0.7);
 }
 .modal-inner{
-    background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
+    background-color: grey;
     border-radius: 4px; 
   
 }
@@ -13,30 +12,25 @@
     padding-top: 1rem;
 }
 .form-component label{
-    color: white;
+
     position: absolute;
     left: 0;
     bottom: 30%;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
-    font-size: larger;
+    font-size: large;
     
 }
 .form-component input{
-    color: white;
-    border-bottom: 1px solid white;
-    background-color: #08081B;
+    color: rgb(104, 104, 104);
+    background-color: transparent;
     padding: 0.75rem 0.5rem;
     width: 100%;
     outline: none;
-    ::placeholder{
-        color: white;
-    }
+    
 }
 .form-component textarea{
-    border-bottom: 1px solid white;
-    background-color: #08081B;
-    border-bottom: 1px solid white;
+    
     padding: 0.5rem 0.5rem;
     width: 100%;
     outline: none;
