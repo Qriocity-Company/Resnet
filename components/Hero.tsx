@@ -22,10 +22,10 @@ export const Hero = () => {
     <div className="parent relative lg:h-[900px] lg:w-[1400px] md:W-[750px] w-[350px] md:h-screen h-screen flex justify-center items-center">
       <div className=" w-[300px] h-[400px] lg:w-[958px] lg:h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
       <div className="main2">
-        <h1 className="w-[350px] md:w-[600px] lg:w-[941px]  text-center z-10  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-[24px] lg:text-[65px] font-bold font-Raleway lg:leading-[80px]">
+      <h1 className="w-[350px] md:w-[600px] lg:w-[941px]  text-center z-10 !opacity-100 bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-[24px] lg:text-[65px] font-bold font-Raleway lg:leading-[80px]">
           Artificial Intelligence & Machine Learning Consulting Services{" "}
         </h1>
-        <p className=" w-[350px] md:w-[672px] h-[83px] text-center bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-12px lg:text-2xl font-medium font-['Poppins']">
+        <p className=" w-[350px] md:w-[672px] h-[83px] text-center !opacity-100  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-12px lg:text-2xl font-medium font-['Poppins']">
           Transforming Possibilities into Realities: Elevate Your Future with
           Our AI & ML Consulting Excellence{" "}
         </p>
