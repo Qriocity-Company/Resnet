@@ -55,7 +55,7 @@ const ContactUs: React.FC<ContactUsProps> = ({setContactModal}) => {
                 
                 <textarea name="message" placeholder="Message" className="bg-transparent border-b-white border-b-2 p-2 mb-2 outline-none w-full resize-none md:text-base text-sm" />
               </div>
-              <div>
+              <div className="mt-0 md:mt-4">
                 <button type="submit" className="hover:text-[#FF001D] hover:scale-110 hover:font-semibold hover:bg-white transition-all bg-[#FF001D] text-white py-[8px] px-[14px] md:py-[0.6rem] md:px-[1rem] flex items-center rounded-3xl text-sm md:text-base">Send Message &gt;</button>
               </div>
             </form>

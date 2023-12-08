@@ -4,6 +4,14 @@
 }
 .modal-inner{
     background-color: #1E1E1E;
+    transform: translateY(-1000px);
+    /* transition:all 0.2s ease-in-out; */
+    animation: movein 0.8s ease-out forwards;
+}
+@keyframes movein {
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 
