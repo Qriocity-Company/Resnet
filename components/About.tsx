@@ -19,7 +19,7 @@ export const About:React.FC = () => {
         <div className="text-[34px] lg:text-[65px] font-[700] w-full ">
           <span className="">We Make Your </span><br/>
          <div className="flex h-[50px] md:h-[98px] overflow-hidden ease-in-out ">
-         <p className="w-fit">Business</p>
+         <p className="w-fit lg:text-[65px] font-[700]">Business</p>
           <div className=" mt-0 font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text  ps-3 ">
               <span className="wordspins  block" >Thrive</span>
               <span className="wordspins block">Flourish</span>
