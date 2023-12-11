@@ -21,9 +21,9 @@ export const About:React.FC = () => {
          <div className="flex h-[50px] md:h-[98px] overflow-hidden ease-in-out ">
          <p className="w-fit">Business</p>
           <div className=" mt-0 font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text  ps-3 ">
-              <span className="wordspin  block" >Thrive</span>
-              <span className="wordspin block">Flourish</span>
-              <span className="wordspin block">Scale 10x</span>
+              <span className="wordspins  block" >Thrive</span>
+              <span className="wordspins block">Flourish</span>
+              <span className="wordspins block">Scale 10x</span>
           </div>
          </div>
         </div>
