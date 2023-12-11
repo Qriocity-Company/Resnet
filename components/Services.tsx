@@ -84,7 +84,22 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center mt-20">
+      <div>
+        <h1 className="font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
+          What does Resnet Offer ?
+        </h1>
+        <div className="flex flex-col items-center mt-4">
+          <div>
+            How we help you move through{" "}
+            <span className="font-semibold text-red-500">Machine Learning</span>{" "}
+            and
+          </div>
+          <div className="font-semibold text-red-500">
+            Artificial Intelligence
+          </div>
+        </div>
+      </div>
       <section>
         <div className="container">
           <div className="parent-circle">
