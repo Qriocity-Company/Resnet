@@ -11,7 +11,7 @@ import '../styles/Footer.css'
 
 export const Footer = () => {
   return (
-    <footer className='py-6 pb-24 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden lg:w-[1440px]'>
+    <footer className=' pb-8 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[750px] lg:w-[1440px]'>
 
       {/* grid */}
       <div className='md:block lg:flex gap-12 p-2 md:p-8'>
@@ -61,7 +61,7 @@ export const Footer = () => {
 
       </div>
 
-      <div className='text-center mt-8'>
+      <div className='text-center '>
         &copy; - 2023 Resnet Pvt Ltd | All Right Reserved
       </div>
       <div className="absolute  w-[375px] h-64 bg-red-600 rounded-full blur-[160px]  left-[30%] -bottom-[45%]"></div>
