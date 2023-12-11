@@ -84,7 +84,7 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className="flex flex-col justify-center mt-20 mx-10">
+    <div className="flex flex-col justify-center mt-20 px-10">
       <div>
         <h1 className="font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
           What does Resnet Offer ?
@@ -188,7 +188,7 @@ export const Services = () => {
             <Image
               alt="User Experience"
               src={image4}
-              className="image"
+              className="image w-[170px] aspect-square "
               width={150}
               height={150}
             />
@@ -214,7 +214,7 @@ export const Services = () => {
             <Image
               alt="User Experience"
               src={image5}
-              className="image w-[150px] aspect-square"
+              className="image w-[170px] aspect-square"
               width={200}
               height={200}
             />
