@@ -84,7 +84,7 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className="flex flex-col justify-center mt-20 px-10">
+    <div className="flex flex-col justify-center mt-20 px-10 max-w-[350px] md:max-w-[750px] lg:max-w-[1440px]">
       <div>
         <h1 className="font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
           What does Resnet Offer ?

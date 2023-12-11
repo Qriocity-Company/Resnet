@@ -11,12 +11,12 @@ import '../styles/Footer.css'
 
 export const Footer = () => {
   return (
-    <footer className='py-6 pb-24 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden'>
+    <footer className='py-6 pb-24 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden lg:w-[1440px]'>
 
       {/* grid */}
       <div className='md:block lg:flex gap-12 p-2 md:p-8'>
 
-        <div className='block md:flex w-full md:gap-6 lg:gap-12'>
+        <div className='block md:flex w-full md:gap-6 lg:gap-4'>
           {/* company description */}
           <div className='w-[100%] md:w-[50%] flex flex-col gap-4'>
             <Image src={logo} width={100} alt='' ></Image>
