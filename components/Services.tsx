@@ -7,7 +7,7 @@ import image1 from "../assets/s1.jpg";
 import image2 from "../assets/s2.jpg";
 import image3 from "../assets/s3.jpg";
 import image4 from "../assets/s4.jpg";
-
+import image5 from "../assets/s5.png";
 import Image from "next/image";
 export const Services = () => {
   // return (
@@ -84,7 +84,7 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className="flex flex-col justify-center mt-20">
+    <div className="flex flex-col justify-center mt-20 mx-10">
       <div>
         <h1 className="font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
           What does Resnet Offer ?
@@ -100,7 +100,7 @@ export const Services = () => {
           </div>
         </div>
       </div>
-      <section>
+      <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
             <h2 className="child">User Experience</h2>
@@ -180,7 +180,7 @@ export const Services = () => {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
             <h2 className="child">User Experience</h2>
@@ -213,10 +213,10 @@ export const Services = () => {
             <h3 className="child">We are all users</h3>
             <Image
               alt="User Experience"
-              src={image4}
-              className="image"
-              width={150}
-              height={150}
+              src={image5}
+              className="image w-[150px] aspect-square"
+              width={200}
+              height={200}
             />
             <p className="service-details child">
               <span>
