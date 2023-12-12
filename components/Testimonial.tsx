@@ -5,9 +5,9 @@ import user from "../assets/user1.png"
 
 
 const testimonials = [
-  { id: 1, content: 'Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla tellus. Lorem ipsum dolor sit amet consectetur.', author: 'CEO Alphabet' },
-  { id: 2, content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempore quia perferendis similique iusto debitis provident, nesciunt reiciendis tenetur dolores explicabo! Iste maxime fugit quae animi doloremque, saepe soluta libero laboriosam magnam quidem, earum eligendi quis ipsum ipsam quo a excepturi repellat voluptatem dolore delectus beatae esse. reprehenderit repellendus cumque voluptates saepe dolorum.', author: 'CEO Google' },
-  { id: 3, content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores at, placeat, minima culpa nesciunt voluptas mollitia unde facilis reprehenderit totam commodi adipisci non sapiente recusandae aliquid numquam. Sed recusandae sapiente laboriosam adipisci inventore, laborum velit aut in libero omnis minima ipsam. Voluptas recusandae facilis nisi! Autem magni quidem rem.', author: 'CEO MicroSoft' },
+  { id: 1, content: 'ResNet delivered beyond my expectations! Their innovative designs and seamless development transformed our online presence. From the initial concept discussions to the final execution, every step was handled with precision and professionalism. The team&apos;s commitment to excellence truly sets them apart', author: 'Aarti Desai' },
+  { id: 2, content: 'Exceptional work by ResNet! Their team understood our vision and translated it into a website that not only reflects our brand perfectly but also resonates with our target audience. The seamless collaboration and creative input made the entire process a breeze. Professional, creative, and highly recommended.', author: 'Suresh Mehta' },
+  { id: 3, content: 'Kudos to ResNet for creating a website that not only looks great but also functions seamlessly. Their attention to detail, user-centric design, and robust development make for an outstanding combination. We felt supported throughout the project, and the end result speaks volumes. Highly satisfied!', author: 'Viraj Dobriyal' },
   // Add more testimonials as needed
 ];
 
