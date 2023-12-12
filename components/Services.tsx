@@ -116,7 +116,7 @@ export const Services = () => {
               <span>
                 At ResNet, our expert developers transform your ideas into
                 powerful, scalable software solutions. From concept to
-                deployment, we're your partners in code
+                deployment, we&apos;re your partners in code
               </span>{" "}
             </p>
           </div>
