@@ -5,6 +5,7 @@ import Image from 'next/image'
 import '../styles/CaseStories.css'
 import cardImg from '../assets/caseStudy-card.png'
 import closeImg from '../assets/x-circle-fill.svg'
+import docauto from '../assets/documentation.png'
 export const CaseStories = () => {
 
   const [clicked0,setClicked0] = useState(false)
@@ -48,7 +49,7 @@ export const CaseStories = () => {
         <div className='relative w-[100%] md:w-[80%] left-[0%] md:left-[8%]'>
 
         
-        <div onClick={()=>cardClicked(0)} className={clicked0?' h-[70vh] w-[100%] md:w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute card-clicked':`flip-card h-[350px] lg:h-[450px] w-[100%] md:w-[30%] rounded-xl absolute left-[0%] cursor-pointer`}>
+        <div onClick={()=>cardClicked(0)} className={clicked0?'h-[70vh] w-[100%] md:w-[80%] lg:h-[450px] lg:w-[30%] rounded-xl absolute card-clicked':`flip-card h-[350px] lg:h-[450px] w-[100%] md:w-[30%] rounded-xl absolute left-[0%] cursor-pointer`}>
 
           <div className="flip-card-inner  w-full rounded-xl">
 
@@ -66,9 +67,10 @@ export const CaseStories = () => {
                 :''
                 
               }
-              <h1 className='text-4xl font-bold'>Document Automation</h1>
-              <p className='mt-6 text-justify'>
-              Implementing Artificial Intelligence (AI) for documentation automation addresses manual inefficiencies by streamlining tasks, reducing errors, and fostering collaboration. It ensures scalability, diminishes reliance on experts, and contributes to environmental sustainability. The shift to AI signifies a transformative leap towards heightened productivity, precision, and eco-friendly information management.
+              <Image src={docauto} alt='Documentation'></Image>
+              <h1 className='text-4xl font-bold'>Redefining Student Projects</h1>
+              <p className='mt-6 text-justify max-h-[290px] overflow-hidden'>
+              Implementing Artificial Intelligence (AI) for documentation automation addresses manual inefficiencies by streamlining tasks, reducing errors, and fostering collaboration. It ensures scalability, diminishes reliance on experts, and contributes to environmental sustainability. The shift to AI signifies a transformative leap towards heightened productivity, precision, and eco-friendly information management. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos cumque reiciendis sit nesciunt, non, mollitia aspernatur fuga explicabo itaque nisi ipsum. Explicabo nostrum, sapiente nesciunt, veniam, iure magni eligendi reprehenderit corrupti debitis aperiam quas!
               </p>
             </div>
 
@@ -112,7 +114,7 @@ export const CaseStories = () => {
                 :''
                 
               }
-              <h1>AI for Data Analysis</h1>
+              <h1>Revolutionizing Customer Insights</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quia eos laborum explicabo excepturi sunt fuga possimus aut, ad ab. Atque consequuntur necessitatibus totam voluptatibus debitis tempora amet temporibus veniam ex, id quas minima fugiat consequatur autem rem quam qui maxime vero reprehenderit libero? Reprehenderit, delectus.</p>
             </div>
 

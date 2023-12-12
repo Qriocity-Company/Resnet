@@ -220,7 +220,7 @@ export const Services = () => {
             />
             <p className="service-details child absolute top-[45%] left-[50%] translate-x-[-50%]">
               <span>
-              Elevate engagement and conversions with ResNet's captivating landing pages. Our design and development expertise ensures a lasting impression.
+              Elevate engagement and conversions with ResNet&apos;s captivating landing pages. Our design and development expertise ensures a lasting impression.
               </span>{" "}
             </p>
           </div>
