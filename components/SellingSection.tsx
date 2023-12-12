@@ -28,10 +28,10 @@ const contentsLeft = [
 const contentsRight = [
   {
     "heading": "Efficiency Redefined, Results Amplified",
-    "content": "ResNet's software development redefines efficiency. From concept to deployment, experience seamless processes that amplify results and elevate your business."
+    "content": "ResNet's software development redefines efficiency. From concept to deployment, experience seamless processes that amplify and elevate your business."
   },
   {
-    "heading": "Strategic App Solutions, Unmatched Success",
+    "heading": "Strategic Unmatched Success",
     "content": "ResNet's app development brings unmatched success. Our strategic approach ensures apps that not only amaze but also become industry leaders."
   },
   {
@@ -62,13 +62,13 @@ const contentsRight = [
 
       <div className='mt-[28vh] md:mt-24 flex justify-center w-full'>
 
-        <div className='p-4 pr-6 h-[40vh] md:h-[35vh] w-[50%] lg:w-[40%] relative overflow-hidden'>
+        <div className='p-4 pr-6 h-[55vh] md:h-[35vh] w-[50%] lg:w-[40%] relative overflow-hidden'>
           {
             contentsLeft.map((element,index)=>{
               return (
-                <div className={`content wordspin h-[40vh] md:h-[35vh]`} key={index} >
+                <div className={`content wordspin h-[55vh] md:h-[35vh]`} key={index} >
                   <h2 className='text-xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#39A94B] from-10% via-[#6cff85] via-40% to-[#00FFFF] to-100% font-extrabold text-end  pb-2 lg:pb-6'>{element.heading}</h2>
-                  <p className='text-sm md:text-xl text-white text-end'>
+                  <p className='text-sm md:text-xl text-white text-end w-full'>
                   {element.content}
                   </p>
                 </div>
@@ -77,13 +77,13 @@ const contentsRight = [
           }
         </div>
 
-        <div className='pl-6 p-4 border-s-[3px] border-gray-700 h-[40vh] md:h-[35vh] w-[50%] lg:w-[40%]  relative overflow-hidden'>
+        <div className='pl-6 p-4 border-s-[3px] border-gray-700 h-[55vh] md:h-[35vh] w-[50%] lg:w-[40%]  relative overflow-hidden'>
           {
             contentsRight.map((element,index)=>{
               return (
-                <div className={`content wordspin h-[40vh] md:h-[35vh]`} key={index} >
+                <div className={`content wordspin h-[55vh] md:h-[35vh]`} key={index} >
                   <h2 className='text-xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFFF]  to-[#39A94B] font-extrabold text-start pb-2 lg:pb-6'>{element.heading}</h2>
-                  <p className='text-sm md:text-xl text-white text-start'>
+                  <p className='text-sm md:text-xl text-white text-start w-full'>
                   {element.content}
                   </p>
                 </div>
