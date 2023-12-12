@@ -379,7 +379,7 @@
     padding: 100px;
     width: 40px;
     height: 40px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.35s ease-in-out;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -449,3 +449,15 @@
     display: none;
   }
   
+
+
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      width: 350px;
+      height: 480px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}

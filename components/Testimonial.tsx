@@ -73,7 +73,7 @@ export const Testimonial = () => {
 
 
   return (
-    <div className='mt-4 w-5/6 mx-auto '>
+    <div className='mt-20 md:mt-4 w-5/6 mx-auto '>
       <div>
         <div className='text-[46px] p-3 font-bold text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center 2'>Voices of Victory</div>
         <p className='text-[16px] text-center max-w-md mx-auto'>Client Testimonials That Speak to the Power of <span className='text-[#FF001D]'>Resnet&apos;</span>AI & Machine Learning Excellence</p>
