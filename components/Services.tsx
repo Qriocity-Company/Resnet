@@ -103,8 +103,8 @@ export const Services = () => {
       <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child">User Experience</h2>
-            <h3 className="child">We are all users</h3>
+            <h2 className="child">Software Development</h2>
+            <h3 className="child">Crafting Code, Building Dreams</h3>
             <Image
               alt="User Experience"
               src={image1}
@@ -114,23 +114,22 @@ export const Services = () => {
             />
             <p className="service-details child">
               <span>
-                With over 200 digital projects and counting, we get what users
-                want and need pretty easily. UX is the core to everything we
-                build. In Codigo, we take user research, competitive analysis,
-                wireframes, user flows, content maps very seriously.
+                At ResNet, our expert developers transform your ideas into
+                powerful, scalable software solutions. From concept to
+                deployment, we're your partners in code
               </span>{" "}
             </p>
           </div>
 
-          <h4 className="main-tag">User Experience</h4>
+          <h4 className="main-tag">Software Development</h4>
 
-          <p className="main-tag">How users interact</p>
+          <p className="main-tag">Crafting Code, Building Dreams</p>
         </div>
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child">User Experience</h2>
-            <h3 className="child">We are all users</h3>
+            <h2 className="child">App Development</h2>
+            <h3 className="child">Apps That Amaze, Solutions That Succeed</h3>
             <Image
               alt="User Experience"
               src={image2}
@@ -140,23 +139,24 @@ export const Services = () => {
             />
             <p className="service-details child">
               <span>
-                With over 200 digital projects and counting, we get what users
-                want and need pretty easily. UX is the core to everything we
-                build. In Codigo, we take user research, competitive analysis,
-                wireframes, user flows, content maps very seriously.
+                Stay ahead with ResNet's cutting-edge app development services.
+                Our iOS and Android apps blend innovation with user-friendly
+                design.
               </span>{" "}
             </p>
           </div>
 
-          <h4 className="main-tag">User Experience</h4>
+          <h4 className="main-tag">App Development</h4>
 
-          <p className="main-tag">How users interact</p>
+          <p className="main-tag">Apps That Amaze, Solutions That Succeed</p>
         </div>
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child">User Experience</h2>
-            <h3 className="child">We are all users</h3>
+            <h2 className="child">UI/UX Design</h2>
+            <h3 className="child">
+              Design that Delights, Interfaces that Inspire
+            </h3>
             <Image
               alt="User Experience"
               src={image3}
@@ -166,25 +166,26 @@ export const Services = () => {
             />
             <p className="service-details child">
               <span>
-                With over 200 digital projects and counting, we get what users
-                want and need pretty easily. UX is the core to everything we
-                build. In Codigo, we take user research, competitive analysis,
-                wireframes, user flows, content maps very seriously.
+                Elevate your digital presence with ResNet's UI/UX design
+                expertise. We create visually stunning interfaces for an
+                exceptional user experience.
               </span>{" "}
             </p>
           </div>
 
-          <h4 className="main-tag">User Experience</h4>
+          <h4 className="main-tag">UI/UX Design</h4>
 
-          <p className="main-tag">How users interact</p>
+          <p className="main-tag">
+            Design that Delights, Interfaces that Inspire
+          </p>
         </div>
       </section>
 
       <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child">User Experience</h2>
-            <h3 className="child">We are all users</h3>
+            <h2 className="child">AI/ML Solutions</h2>
+            <h3 className="child">Smart Solutions, Data-Driven Success</h3>
             <Image
               alt="User Experience"
               src={image4}
@@ -194,23 +195,22 @@ export const Services = () => {
             />
             <p className="service-details child">
               <span>
-                With over 200 digital projects and counting, we get what users
-                want and need pretty easily. UX is the core to everything we
-                build. In Codigo, we take user research, competitive analysis,
-                wireframes, user flows, content maps very seriously.
+                Unlock the potential of AI and machine learning with ResNet. Our
+                intelligent solutions enhance efficiency, automate processes,
+                and provide valuable insights.
               </span>{" "}
             </p>
           </div>
 
-          <h4 className="main-tag">User Experience</h4>
+          <h4 className="main-tag">AI/ML Solutions</h4>
 
-          <p className="main-tag">How users interact</p>
+          <p className="main-tag">Smart Solutions, Data-Driven Success</p>
         </div>
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child">User Experience</h2>
-            <h3 className="child">We are all users</h3>
+            <h2 className="child">Landing Page Development</h2>
+            <h3 className="child">Captivate, Convert, Succeed</h3>
             <Image
               alt="User Experience"
               src={image5}
@@ -220,17 +220,16 @@ export const Services = () => {
             />
             <p className="service-details child">
               <span>
-                With over 200 digital projects and counting, we get what users
-                want and need pretty easily. UX is the core to everything we
-                build. In Codigo, we take user research, competitive analysis,
-                wireframes, user flows, content maps very seriously.
+                Make a lasting impression with ResNet's captivating landing
+                pages. Engage your audience and drive conversions with our
+                design and development expertise.
               </span>{" "}
             </p>
           </div>
 
-          <h4 className="main-tag">User Experience</h4>
+          <h4 className="main-tag">Landing Page Development</h4>
 
-          <p className="main-tag">How users interact</p>
+          <p className="main-tag">Captivate, Convert, Succeed</p>
         </div>
       </section>
     </div>

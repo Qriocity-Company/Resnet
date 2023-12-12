@@ -23,11 +23,10 @@ export const Hero = () => {
       <div className=" w-[300px] h-[400px] lg:w-[958px] lg:h-[958px] bg-[#FF0000]  bg-opacity-30 rounded-full blur-[300px] absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[60%] "></div>
       <div className="main2">
       <h1 className="w-[350px] md:w-[600px] lg:w-[941px]  text-center z-10 !opacity-100 bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-[24px] lg:text-[65px] font-bold font-Raleway lg:leading-[80px]">
-          Artificial Intelligence & Machine Learning Consulting Services{" "}
+      Empowering Innovation, Delivering Excellence{" "}
         </h1>
-        <p className=" w-[350px] md:w-[672px] h-[83px] text-center !opacity-100  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-12px lg:text-2xl font-medium font-['Poppins']">
-          Transforming Possibilities into Realities: Elevate Your Future with
-          Our AI & ML Consulting Excellence{" "}
+        <p className=" w-[350px] md:w-[672px] h-[100px] text-center !opacity-100  bg-gradient-to-t from-slate-600 via-slate-300 to-white bg-clip-text text-transparent text-12px lg:text-2xl font-medium font-['Poppins']">
+        ResNet - Your Premier Partner for Software, App Development, UI/UX Design, AI/ML Solutions, and Landing Page Development{" "}
         </p>
       </div>
 

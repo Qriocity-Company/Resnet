@@ -11,7 +11,7 @@ import '../styles/Footer.css'
 
 export const Footer = () => {
   return (
-    <footer className=' pb-8 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[750px] lg:w-[1440px]'>
+    <footer className=' pb-8 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[] lg:w-[1440px]'>
 
       {/* grid */}
       <div className='md:block lg:flex gap-12 p-2 md:p-8'>
@@ -47,10 +47,9 @@ export const Footer = () => {
         <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-0 lg:w-[40%] hidden md:flex flex-col gap-6'>
           <div className=' w-full flex justify-between gap-2 footer-links sm:text-xs md:text-base'>
             <a href="">Home</a>
-            <a href="">Services</a>
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
+            <a href="">Services</a>  
             <a href="">Case Studies</a>
+            <a href="">Testimonials</a>
           </div>
           <div className='flex gap-6'>
             <Image src={linkedin} alt='Linkedin'></Image>

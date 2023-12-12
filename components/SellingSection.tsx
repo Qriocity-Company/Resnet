@@ -8,40 +8,42 @@ export const SellingSection = () => {
 const [currentIndex, setCurrentIndex] = useState(0);
 const contentsLeft = [
   {
-    "heading": "10+ Years",
-    "content": "With over 1 decade of dedicated service in the AI and Machine Learning industry, we've honed our expertise, refined our strategies, and continuously evolved to meet the dynamic needs of our clients"
+    "heading": "Innovate Today, Succeed Tomorrow",
+    "content": "Discover groundbreaking solutions with ResNet. Our commitment to innovation ensures your business stays ahead, delivering results that resonate with the future."
   },
   {
-    "heading": "Heading 2",
-    "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "heading": "Your Goals, Our Priority",
+    "content": "At ResNet, dedicated teams work tirelessly to achieve your goals. Experience personalized attention that turns your vision into reality."
   },
   {
-    "heading": "Heading 3",
-    "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "heading": "Designing Delightful Experiences",
+    "content": "ResNet's user-centric design philosophy creates interfaces that captivate. Every pixel is crafted for a beautiful, intuitive, and delightful user experience."
   },
   {
-    "heading": "Heading 4",
-    "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "heading": "Harnessing Data, Driving Excellence",
+    "content": "Unlock the power of your data with ResNet. Our AI and machine learning expertise delivers predictive insights, providing a strategic edge for your success."
   }
 ];
+
 const contentsRight = [
   {
-    "heading": "365 Days",
-    "content": "With over 1 decade of dedicated service in the AI and Machine Learning industry, we've honed our expertise, refined our strategies, and continuously evolved to meet the dynamic needs of our clients"
+    "heading": "Efficiency Redefined, Results Amplified",
+    "content": "ResNet's software development redefines efficiency. From concept to deployment, experience seamless processes that amplify results and elevate your business."
   },
   {
-    "heading": "Heading 2",
-    "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "heading": "Strategic App Solutions, Unmatched Success",
+    "content": "ResNet's app development brings unmatched success. Our strategic approach ensures apps that not only amaze but also become industry leaders."
   },
   {
-    "heading": "Heading 3",
-    "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "heading": "Transforming Ideas into Impact",
+    "content": "ResNet transforms ideas into impactful solutions. Witness the power of our teams as they craft, build, and breathe life into your digital dreams."
   },
   {
-    "heading": "Heading 4",
-    "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "heading": "Captivate and Convert with Landing Pages",
+    "content": "ResNet's landing page development captivates and converts. With strategic design, our pages bring success to startups and established brands alike."
   }
 ];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +57,7 @@ const contentsRight = [
 
       <h1 className='font-bold text-5xl text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>People Love Us</h1>
 
-      <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-[#FF001D]'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-[#FF001D]'>Decade</span> of Trust and Innovation in the AI & Machine Learning Industry!</p>
+      <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-[#FF001D]'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-[#FF001D]'>Decade</span> of Trust and Innovation in the Industry!</p>
 
 
       <div className='mt-[28vh] md:mt-24 flex justify-center w-full'>
