@@ -139,7 +139,7 @@ export const Services = () => {
             />
             <p className="service-details child absolute top-[44%] left-[50%] translate-x-[-50%]">
               <span>
-                Stay ahead with ResNet's cutting-edge app development services.
+                Stay ahead with ResNet&apos;s cutting-edge app development services.
                 Our iOS and Android apps blend innovation with user-friendly
                 design.
               </span>{" "}
@@ -166,7 +166,7 @@ export const Services = () => {
             />
             <p className="service-details child absolute top-[44%] left-[50%] translate-x-[-50%]">
               <span>
-                Elevate your digital presence with ResNet's UI/UX design
+                Elevate your digital presence with ResNet&apos;s UI/UX design
                 expertise. We create visually stunning interfaces for an
                 exceptional user experience.
               </span>{" "}
