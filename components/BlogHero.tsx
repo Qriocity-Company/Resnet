@@ -54,13 +54,13 @@ const BlogHero = () => {
           <span className={category !='landing-page'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"}  onClick={()=>{setCategory("landing-page")}}>Landing Page Development</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:flex-[7] gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:flex-[7] gap-4 ">
           {blogs.map((b: any, index) => {
             return (
               <Link
                 key={index}
                 href={{pathname:`/blog/singleBlog`, query: { name: b.title , url:b.imageURL ,category:b.category ,desc:b.description, date:b.createdAt, caption:b.caption}}}
-                className="flex flex-col gap-3 justify-start items-start mb-2"
+                className="flex flex-col gap-1 justify-start items-start mb-4 "
               >
                 <img
                   src={`${URL}/${b.imageURL}`}
@@ -69,7 +69,7 @@ const BlogHero = () => {
                   width={480}
                   height={300}
                 />
-                <div className="bg-[#ff001e2d] border border-[#ff001d] rounded-[14px] py-1 px-3 text-[#ff001d]">
+                <div className="bg-[#ff001e2d] border text-[10px] border-[#ff001d] rounded-[10px] py-1 px-3 text-[#ff001d]">
                   {b.category}
                 </div>
                 <h2 className="text-white text-lg font-semibold ">{b.title}</h2>
