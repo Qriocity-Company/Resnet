@@ -31,7 +31,7 @@ const BlogHero = () => {
   }, [category]);
 
   return (
-    <div className="w-full font-Poppins">
+    <div className="w-full font-Poppins px-1 md:px-8">
       <div className="mt-20 self-start flex items-start flex-col">
         <h1 className="pb-1 font-semibold text-3xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
           Blogs
