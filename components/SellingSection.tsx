@@ -9,38 +9,38 @@ const [currentIndex, setCurrentIndex] = useState(0);
 const contentsLeft = [
   {
     "heading": "Innovate Today, Succeed Tomorrow",
-    "content": "Discover groundbreaking solutions with ResNet. Our commitment to innovation ensures your business stays ahead, delivering results that resonate with the future."
+    "content": "Discover groundbreaking solutions with ResNet. Our commitment to innovation ensures a 25% increase in efficiency for your business."
   },
   {
     "heading": "Your Goals, Our Priority",
-    "content": "At ResNet, dedicated teams work tirelessly to achieve your goals. Experience personalized attention that turns your vision into reality."
+    "content": "At ResNet, dedicated teams work for your goals, delivering personalized strategies for a 30% boost in client revenue."
   },
   {
     "heading": "Designing Delightful Experiences",
-    "content": "ResNet's user-centric design philosophy creates interfaces that captivate. Every pixel is crafted for a beautiful, intuitive, and delightful user experience."
+    "content": "ResNet's user-centric design delivers a 20% increase in user engagement, creating interfaces that captivate and delight."
   },
   {
     "heading": "Harnessing Data, Driving Excellence",
-    "content": "Unlock the power of your data with ResNet. Our AI and machine learning expertise delivers predictive insights, providing a strategic edge for your success."
+    "content": "Unlock the power of your data with ResNet. Our AI expertise ensures a 40% improvement in decision-making processes for your success."
   }
 ];
 
 const contentsRight = [
   {
     "heading": "Efficiency Redefined, Results Amplified",
-    "content": "ResNet's software development redefines efficiency. From concept to deployment, experience seamless processes that amplify and elevate your business."
+    "content": "ResNet's software development redefines efficiency, ensuring a 20% increase in productivity with streamlined processes."
   },
   {
     "heading": "Strategic Unmatched Success",
-    "content": "ResNet's app development brings unmatched success. Our strategic approach ensures apps that not only amaze but also become industry leaders."
+    "content": "ResNet's app development guarantees unmatched success. Our strategic approach delivers apps that amaze and achieve a 30% increase in user engagement."
   },
   {
     "heading": "Transforming Ideas into Impact",
-    "content": "ResNet transforms ideas into impactful solutions. Witness the power of our teams as they craft, build, and breathe life into your digital dreams."
+    "content": "ResNet transforms ideas into impactful solutions. Our teams bring digital dreams to life, resulting in a 25% increase in project impact."
   },
   {
     "heading": "Captivate and Convert with Landing Pages",
-    "content": "ResNet's landing page development captivates and converts. With strategic design, our pages bring success to startups and established brands alike."
+    "content": "ResNet's landing page development captivates and converts. Strategic design leads to a 25% boost in conversion rates, benefiting startups and established brands alike."
   }
 ];
 

@@ -9,6 +9,7 @@ import docauto from '../assets/documentation.png'
 import ds1 from '../assets/ds1.png'
 import ds2 from '../assets/ds2.png' 
 import customer from '../assets/customer-insights.png'
+import doc2 from '../assets/doc2.png'
 import qriocity from '../assets/qriocity.png'
 import invictus from '../assets/invictus2.png'
 
@@ -171,7 +172,8 @@ export const CaseStories = () => {
           <div className="flip-card-inner  w-full rounded-xl">
 
             <div className=" flip-card-front w-full rounded-xl" style={clicked0?{display:'none'}:{}}>
-              <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
+              {/* <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image> */}
+              <Image src={qriocity} alt='Documentation' className='w-full h-full rounded-xl object-cover'></Image>
             </div>
 
             <div className="flip-card-back rounded-xl relative" style={clicked0?{display:'block'}:{}}>
@@ -218,7 +220,8 @@ export const CaseStories = () => {
           <div className="flip-card-inner w-full rounded-xl">
 
             <div className="flip-card-front w-full rounded-xl" style={clicked1?{display:'none'}:{}}>
-              <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
+              <Image src={doc2} alt='Documentation' className='w-full h-full rounded-xl object-cover'></Image>
+              {/* <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image> */}
             </div>
             <div className="flip-card-back rounded-xl" style={clicked0?{display:'block'}:{}}>
               {
@@ -261,7 +264,8 @@ export const CaseStories = () => {
           <div className="flip-card-inner w-full rounded-xl">
 
             <div className="flip-card-front w-full rounded-xl" style={clicked2?{display:'none'}:{}}>
-              <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
+              <Image src={invictus} alt='Documentation' className='w-full h-full rounded-xl object-cover'></Image>
+              {/* <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image> */}
             </div>
             <div className="flip-card-back rounded-xl" style={clicked2?{display:'block'}:{}}>
               {
@@ -305,7 +309,8 @@ export const CaseStories = () => {
           <div className="flip-card-inner w-full rounded-xl">
 
             <div className="flip-card-front w-full rounded-xl" style={clicked3?{display:'none'}:{}}>
-              <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image>
+              <Image src={customer} alt='Documentation' className='w-full h-full rounded-xl object-cover'></Image>
+              {/* <Image src={cardImg} alt='Card' className='w-full h-full rounded-xl object-cover'></Image> */}
             </div>
             <div className="flip-card-back rounded-xl" style={clicked3?{display:'block'}:{}}>
               {
