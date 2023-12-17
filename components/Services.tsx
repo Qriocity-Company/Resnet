@@ -84,7 +84,7 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className=" relative flex flex-col justify-center mt-20 px-10 max-w-[350px] md:max-w-[750px] lg:max-w-[1440px]">
+    <div className=" relative flex flex-col justify-center mt-20 px-10 max-w-[350px] md:max-w-[750px] lg:max-w-[1440px] overflow-hidden">
       <div className="absolute  w-[755px] h-64 bg-[#ff001d] rounded-full blur-[250px]  -left-[20%] top-[25%]"></div>
       <div className="absolute -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[90%] bottom-[25%]"></div>
       <div className="mb-12">

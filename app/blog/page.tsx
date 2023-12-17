@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className=' w-full flex flex-col justify-center items-center max-w-[350px] md:max-w-[760px] lg:max-w-[1440px]'>
+    <main className=' w-full flex flex-col justify-center items-center max-w-[350px] md:max-w-[760px] lg:max-w-[1440px] overflow-hidden'>
     <Navbar/>
     <BlogHero/>
   </main>

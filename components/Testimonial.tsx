@@ -73,7 +73,7 @@ export const Testimonial = () => {
 
 
   return (
-    <div className='relative mt-24 md:mt-4 w-5/6 mx-auto '>
+    <div className='relative mt-24 md:mt-4 w-full mx-auto overflow-hidden'>
        <div className="absolute  w-[755px] h-64 bg-[#ff001d] rounded-full blur-[250px]  -left-[70%] top-[5%]"></div>
       <div className="absolute -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[95%] bottom-[5%]"></div>
       <div>
