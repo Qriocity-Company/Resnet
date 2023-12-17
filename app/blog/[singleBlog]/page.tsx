@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
-import { useSearchParams } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 
-const page = () => {
+const page = (props:any) => {
   const URL = "https://crm-backend-o6sb.onrender.com";
-  const router = useSearchParams();
-  // Access state data passed from the previous page
-  const title: any = router.get("name");
-  const url: any = router.get("url");
-  const category = router.get("category");
-  const decription = router.get("desc");
-  const caption = router.get("caption");
-  const dates: any = router.get("date");
+
+  const title: any = props.searchParams.name;
+  const url: any = props.searchParams.url;
+  const category = props.searchParams.category;
+  const decription = props.searchParams.desc;
+  const caption = props.searchParams.caption;
+  const dates: any = props.searchParams.date;
+  
   return (
     <div>
       <main className=" w-full flex flex-col justify-center items-center max-w-[350px] md:max-w-[760px] lg:max-w-[1440px] font-Poppins">
