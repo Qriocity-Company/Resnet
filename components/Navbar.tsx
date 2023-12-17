@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -7,6 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 import logo from "../assets/Resnet Logo White.png";
 import buttonPattern from "../assets/contact-btn-img.png";
 import ContactUs from "./ContactUs";
+
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [contactModal, setContactModal] = useState(false);

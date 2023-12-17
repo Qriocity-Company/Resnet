@@ -84,7 +84,9 @@ export const Services = () => {
   //   </div>
   // )
   return (
-    <div className="flex flex-col justify-center mt-20 px-10 max-w-[350px] md:max-w-[750px] lg:max-w-[1440px]">
+    <div className=" relative flex flex-col justify-center mt-20 px-10 max-w-[350px] md:max-w-[750px] lg:max-w-[1440px]">
+      <div className="absolute  w-[755px] h-64 bg-[#ff001d] rounded-full blur-[250px]  -left-[20%] top-[25%]"></div>
+      <div className="absolute -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[90%] bottom-[25%]"></div>
       <div className="mb-12">
         <h1 className="font-semibold text-5xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
           What does Resnet Offer ?
@@ -92,7 +94,9 @@ export const Services = () => {
         <div className="flex flex-col items-center mt-4">
           <div>
             How we help you move through{" "}
-            <span className="font-semibold text-[#FF001D]">Machine Learning</span>{" "}
+            <span className="font-semibold text-[#FF001D]">
+              Machine Learning
+            </span>{" "}
             and
           </div>
           <div className="font-semibold text-[#FF001D]">
@@ -103,8 +107,12 @@ export const Services = () => {
       <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">Software Development</h2>
-            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">Crafting Code, Building Dreams</h3>
+            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">
+              Software Development
+            </h2>
+            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">
+              Crafting Code, Building Dreams
+            </h3>
             <Image
               alt="User Experience"
               src={image1}
@@ -128,8 +136,12 @@ export const Services = () => {
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">App Development</h2>
-            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">Apps That Amaze, Solutions That Succeed</h3>
+            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">
+              App Development
+            </h2>
+            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">
+              Apps That Amaze, Solutions That Succeed
+            </h3>
             <Image
               alt="User Experience"
               src={image2}
@@ -139,9 +151,9 @@ export const Services = () => {
             />
             <p className="service-details child absolute top-[44%] left-[50%] translate-x-[-50%]">
               <span>
-                Stay ahead with ResNet&apos;s cutting-edge app development services.
-                Our iOS and Android apps blend innovation with user-friendly
-                design.
+                Stay ahead with ResNet&apos;s cutting-edge app development
+                services. Our iOS and Android apps blend innovation with
+                user-friendly design.
               </span>{" "}
             </p>
           </div>
@@ -153,7 +165,9 @@ export const Services = () => {
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child text-3xl font-bold text-cetner absolute top-[12%] left-[50%] translate-x-[-50%]">UI/UX Design</h2>
+            <h2 className="child text-3xl font-bold text-cetner absolute top-[12%] left-[50%] translate-x-[-50%]">
+              UI/UX Design
+            </h2>
             <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">
               Design that Delights, Interfaces that Inspire
             </h3>
@@ -184,8 +198,12 @@ export const Services = () => {
       <section className="flex flex-col md:flex-row">
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">AI/ML Solutions</h2>
-            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">Smart Solutions, Data-Driven Success</h3>
+            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">
+              AI/ML Solutions
+            </h2>
+            <h3 className="child absolute top-[30%] left-[50%] translate-x-[-50%]">
+              Smart Solutions, Data-Driven Success
+            </h3>
             <Image
               alt="User Experience"
               src={image4}
@@ -209,8 +227,12 @@ export const Services = () => {
 
         <div className="container">
           <div className="parent-circle">
-            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">Landing Page Development</h2>
-            <h3 className="child absolute top-[35%] left-[50%] translate-x-[-50%]">Captivate, Convert, Succeed</h3>
+            <h2 className="child text-3xl font-bold text-cetner absolute top-[8%] left-[50%] translate-x-[-50%]">
+              Landing Page Development
+            </h2>
+            <h3 className="child absolute top-[35%] left-[50%] translate-x-[-50%]">
+              Captivate, Convert, Succeed
+            </h3>
             <Image
               alt="User Experience"
               src={image5}
@@ -220,7 +242,9 @@ export const Services = () => {
             />
             <p className="service-details child absolute top-[45%] left-[50%] translate-x-[-50%]">
               <span>
-              Elevate engagement and conversions with ResNet&apos;s captivating landing pages. Our design and development expertise ensures a lasting impression.
+                Elevate engagement and conversions with ResNet&apos;s
+                captivating landing pages. Our design and development expertise
+                ensures a lasting impression.
               </span>{" "}
             </p>
           </div>
