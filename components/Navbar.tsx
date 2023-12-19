@@ -85,7 +85,7 @@ export const Navbar = () => {
           >
             Our Services
           </a> */}
-          {/* <a href="/blog">Blog</a> */}
+          <a href="/blog">Blog</a>
 
           <div className="mt-5 relative group w-[300px]">
             <div
