@@ -22,12 +22,15 @@ export const Navbar = () => {
       </a>
       <div className="hidden md:flex flex-row gap-12  ml-auto text-white font-Sg justify-between items-center">
         <a href="/">Home</a>
-        <a href="/about">About Us</a>
+        <a href="#services">
+            Services
+        </a>
+        <a href="#about">About Us</a>
         {/* <a href="/services" className={isRouteActive("/services")}>
           Services
         </a> */}
-        <a href="/caseStudy/documentation">Case Studies</a>
-        <a href="/blog">Blog</a>
+        <a href="#successStories">Success Stories</a>
+        {/* <a href="/blog">Blog</a> */}
         <div className=" relative  group">
           <Image
             src={buttonPattern}
@@ -66,11 +69,14 @@ export const Navbar = () => {
           <a href="/" onClick={toggleMenu}>
             Home
           </a>
-          <a href="/about" onClick={toggleMenu}>
+          <a href="#services">
+            Services
+          </a>
+          <a href="#about" onClick={toggleMenu}>
             About Us
           </a>
-          <a href="/caseStudy/documentation" onClick={toggleMenu}>
-            Case Studies
+          <a href="#successStories" onClick={toggleMenu}>
+            Success Stories
           </a>
           {/* <a
             href="/services"
@@ -79,7 +85,7 @@ export const Navbar = () => {
           >
             Our Services
           </a> */}
-          <a href="/blog">Blog</a>
+          {/* <a href="/blog">Blog</a> */}
 
           <div className="mt-5 relative group w-[300px]">
             <div

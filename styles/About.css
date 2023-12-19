@@ -1,28 +1,29 @@
 
 
 .wordspins {
-    display: block;
+    /* display: block; */
+    /* transform: translateY(-20%); */
     color: red;
-    animation : spain_words 5s  infinite  ;
+    animation : spin_words 5s  infinite  ;
 
 }
 
-@keyframes spain_words {
+@keyframes spin_words {
    
     0%{
-        transform: translateY(80%);
+        transform: translateY(100%);
     }
     25%{
-        transform: translateY(2%);
+        transform: translateY(-20%);
     }
     50%{
-        transform: translateY(-100%);
+        transform: translateY(-120%);
     }
     75%{
-        transform:  translateY(-200%);
+        transform:  translateY(-220%);
     }
     100%{ 
-        transform:  translateY(-300%);
+        transform:  translateY(-320%);
     }
 
 

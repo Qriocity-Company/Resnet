@@ -11,56 +11,58 @@ import '../styles/Footer.css'
 
 export const Footer = () => {
   return (
-    <footer className=' pb-8 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[] lg:w-[1440px]'>
+    <footer className=' pb-4 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[] lg:w-[1440px]'>
 
       {/* grid */}
-      <div className='md:block lg:flex gap-12 p-2 md:p-8'>
+      <div className='md:block lg:flex gap-12 p-2'>
 
         <div className='block md:flex w-full md:gap-6 lg:gap-4'>
           {/* company description */}
-          <div className='w-[100%] md:w-[50%] flex flex-col gap-4'>
+          <div className='w-[100%] md:w-[50%] flex flex-col gap-2 '>
             <Image src={logo} width={100} alt='' ></Image>
-            <p>
+            <p className='text-justify md:text-left'>
             Partner with us for strategic guidance on integrating AI seamlessly into your operations. Uncover new enhance decision-making with Resnet Solutions by your side.
             </p>
           </div>
 
           {/* address and contact */}
-          <div className='w-[100%] md:w-[50%] flex flex-col gap-4 mt-8 md:mt-0'>
+          <div className='w-[100%] md:w-[50%] flex flex-col gap-4 mt-4 md:mt-0'>
             <div className='flex gap-6 items-center'>
               <Image src={locationIcon} height={22} alt='Location' className='h-[22px]'></Image>
-              <p>
-              123, Gopal Street,
-              Mylapore, Chennai - 600004,
-              Tamil Nadu, India.
+              <p className='text-left'>
+              42/3, kannagi st, anna nedum pathai, extension, choolaimedu, chennai, tamil nadu 600094
               </p>
             </div>
             <div className='flex gap-6 items-center'>
               <Image src={callIcon} alt='Location' height={22} className='h-[22px]'></Image>
-              <p>
-                (+91)-234-234-4321
+              <p className='text-left'>
+                (+91)-9597366788
               </p>
             </div>
           </div>
         </div>
         {/* Links div */}
-        <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-0 lg:w-[40%] hidden md:flex flex-col gap-6'>
-          <div className=' w-full flex justify-between gap-2 footer-links sm:text-xs md:text-base'>
-            <a href="">Home</a>
-            <a href="">Services</a>  
-            <a href="">Case Studies</a>
-            <a href="">Testimonials</a>
+        <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-4 lg:w-[40%] hidden md:flex flex-col gap-4'>
+          <div className=' w-full flex flex-col justify-between gap-2 footer-links sm:text-xs md:text-base z-10'>
+            <a href="/">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#successStories">Success Stories</a>
           </div>
-          <div className='flex gap-6'>
-            <Image src={linkedin} alt='Linkedin'></Image>
-            <Image src={insta} alt='Insta'></Image>
-            <Image src={fb} alt='Facebook'></Image>
+          <div className='flex gap-6 z-10'>
+            <a href="https://www.linkedin.com/company/resnet-solutions-private-limited/" target='_blank' className='cursor-pointer'>
+              <Image src={linkedin} alt='Linkedin'></Image>
+            </a>
+            <a href="https://www.instagram.com/resnetsolutions/" target='_blank' className='cursor-pointer'>
+              <Image src={insta} alt='Insta'></Image>
+            </a>
+            
           </div>
         </div>
 
       </div>
 
-      <div className='text-center '>
+      <div className='text-center mt-2 md:mt-0'>
         &copy; - 2023 Resnet Pvt Ltd | All Right Reserved
       </div>
       <div className="absolute  w-[375px] h-64 bg-red-600 rounded-full blur-[160px]  left-[30%] -bottom-[45%]"></div>

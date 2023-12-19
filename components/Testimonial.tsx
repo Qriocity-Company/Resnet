@@ -5,9 +5,9 @@ import user from "../assets/user1.png"
 
 
 const testimonials = [
-  { id: 1, content: 'ResNet delivered beyond my expectations! Their innovative designs and seamless development transformed our online presence. From the initial concept discussions to the final execution, every step was handled with precision and professionalism. The team&apos;s commitment to excellence truly sets them apart', author: 'Aarti Desai' },
-  { id: 2, content: 'Exceptional work by ResNet! Their team understood our vision and translated it into a website that not only reflects our brand perfectly but also resonates with our target audience. The seamless collaboration and creative input made the entire process a breeze. Professional, creative, and highly recommended.', author: 'Suresh Mehta' },
-  { id: 3, content: 'Kudos to ResNet for creating a website that not only looks great but also functions seamlessly. Their attention to detail, user-centric design, and robust development make for an outstanding combination. We felt supported throughout the project, and the end result speaks volumes. Highly satisfied!', author: 'Viraj Dobriyal' },
+  { id: 1, content: 'ResNet delivered beyond my expectations! Their innovative designs and seamless development transformed our online presence. From the initial concept discussions to the final execution, every step was handled with precision and professionalism. The team&apos;s commitment to excellence truly sets them apart', author: 'Aarti Desai',position:'Head of Marketting, Infomatica.co' },
+  { id: 2, content: 'Exceptional work by ResNet! Their team understood our vision and translated it into a website that not only reflects our brand perfectly but also resonates with our target audience. The seamless collaboration and creative input made the entire process a breeze. Professional, creative, and highly recommended.', author: 'Suresh Mehta' ,position:'CEO, Global Automations' },
+  { id: 3, content: 'Kudos to ResNet for creating a website that not only looks great but also functions seamlessly. Their attention to detail, user-centric design, and robust development make for an outstanding combination. We felt supported throughout the project, and the end result speaks volumes. Highly satisfied!', author: 'Viraj Dobriyal',position:'CFO, Digi-Life'  },
   // Add more testimonials as needed
 ];
 
@@ -56,11 +56,9 @@ const TestimonialCard = ({data }:any)=>{
     </div>
 
     <div className=''>
-      <Image
-        src={user}
-        alt="User"
-        className='rounded-full  w-[70px] h-[70px] md:w-[100px] md:h-[100px] mx-auto'
-      />
+      <div className='text-center'>
+        {data.position}
+      </div>
       <div className='mt-2 mx-auto w-fit text-[20px] md:text-[30px] text-[#727289]'>{data.author}</div>
     </div>
   
@@ -73,7 +71,7 @@ export const Testimonial = () => {
 
 
   return (
-    <div className='relative mt-24 md:mt-4 w-full mx-auto overflow-hidden'>
+    <div id='testimonials' className='relative mt-[300px] md:mt-4 w-full mx-auto overflow-hidden pb-4'>
        <div className="absolute  w-[755px] h-64 bg-[#ff001d] rounded-full blur-[250px]  -left-[70%] top-[5%]"></div>
       <div className="absolute -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[95%] bottom-[5%]"></div>
       <div>

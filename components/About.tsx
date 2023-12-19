@@ -11,26 +11,24 @@ export const About:React.FC = () => {
   const [contactModal,setContactModal] = useState(false)
 
   return (
-    <div className="my-8 flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
+    <div id="about" className="my-8 flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
       <div className="max-w-xl w-full text-red-500">
         <Image src={AboutImage} alt="About" width={700} height={700} />
       </div>
       <div className="max-w-2xl">
         <div className="text-[34px] lg:text-[65px] font-[700] w-full ">
           <span className="">We Make Your </span><br/>
-         <div className="flex h-[50px] md:h-[98px] overflow-hidden ease-in-out ">
-         <p className="w-fit lg:text-[65px] font-[700]">Business</p>
-          <div className=" mt-0 font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text  ps-3 ">
-              <span className="wordspins  block" >Thrive</span>
-              <span className="wordspins block">Flourish</span>
-              <span className="wordspins block">Scale 10x</span>
-          </div>
+          <div className="flex h-[50px] md:h-[98px] overflow-hidden ease-in-out ">
+            <p className="w-fit lg:text-[65px] font-[700]">Business</p>
+            <div className=" mt-0 font-semibold  text-transparent bg-gradient-to-r from-[#FF001D]  from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text  ps-3">
+                <span className="wordspins  block" >Thrive</span>
+                <span className="wordspins block">Flourish</span>
+                <span className="wordspins block">Scale 10x</span>
+            </div>
          </div>
         </div>
         <div className=" mt-10 md:mt-0 text-[16px] md:text-[24px]">
-          Lorem ipsum dolor sit amet consectetur. Nulla sed purus fringilla
-          tellus. Lorem ipsum dolor sit amet consectetur. Nulla sed purus
-          fringilla tellus. Lorem ipsum dolor sit amet consectetur.{" "}
+        Elevate your business with our AI/ML automation services. Experience 10x growth, seamless scalability, and thriving operations. Let us reshape your future where innovation meets efficiency, and success knows no bounds.
         </div>
 
         <div className="mt-5 relative w-fit group left-[50%] translate-x-[-50%]">
