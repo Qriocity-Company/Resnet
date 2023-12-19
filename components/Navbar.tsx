@@ -30,7 +30,7 @@ export const Navbar = () => {
           Services
         </a> */}
         <a href="#successStories">Success Stories</a>
-        {/* <a href="/blog">Blog</a> */}
+        <a href="/blog">Blog</a>
         <div className=" relative  group">
           <Image
             src={buttonPattern}
