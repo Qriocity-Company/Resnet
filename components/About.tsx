@@ -13,7 +13,7 @@ export const About:React.FC = () => {
   return (
     <div id="about" className="my-8 flex flex-col md:flex-row justify-between items-center w-11/12 mx-auto">
       <div className="max-w-xl w-full text-red-500">
-        <Image src={AboutImage} alt="About" width={700} height={700} />
+        <Image src={AboutImage} alt="About" width={700} height={700} className="h-[300px] md:h-[500px] w-[600px] object-cover"/>
       </div>
       <div className="max-w-2xl">
         <div className="text-[34px] lg:text-[65px] font-[700] w-full ">
