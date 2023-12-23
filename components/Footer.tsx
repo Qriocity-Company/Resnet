@@ -36,7 +36,7 @@ export const Footer = () => {
             <div className='flex gap-6 items-center'>
               <Image src={callIcon} alt='Location' height={22} className='h-[22px]'></Image>
               <p className='text-left'>
-                (+91)-9597366788
+                (+91)-9944878589
               </p>
             </div>
           </div>
