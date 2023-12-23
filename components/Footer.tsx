@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className='w-[100%] md:w-[50%] flex flex-col gap-2 '>
             <Image src={logo} width={100} alt='' ></Image>
             <p className='text-justify md:text-left'>
-            Partner with us for strategic guidance on integrating AI seamlessly into your operations. Uncover new enhance decision-making with Resnet Solutions by your side.
+            Partner with us for strategic guidance on integrating our software solutions into your operations. Uncover new enhance decision-making with Resnet Solutions by your side.
             </p>
           </div>
 
