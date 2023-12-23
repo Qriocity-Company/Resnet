@@ -57,10 +57,10 @@ const contentsRight = [
 
       <h1 className='font-bold text-5xl text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center'>People Love Us</h1>
 
-      <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-[#FF001D]'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-[#FF001D]'>Decade</span> of Trust and Innovation in the Industry!</p>
+      {/* <p className='w-[70%] lg:w-[50%] mt-4 text-center absolute left-[50%] -translate-x-[50%]'>A decade od excellence , <span className='font-semibold text-[#FF001D]'>70 +</span> Clients Strong - Celebrating a <span className='font-semibold text-[#FF001D]'>Decade</span> of Trust and Innovation in the Industry!</p> */}
 
 
-      <div className='mt-[28vh] md:mt-24 flex justify-center w-full'>
+      <div className='mt-[28vh] md:mt-16 flex justify-center w-full'>
 
         <div className='p-4 pr-6 h-[55vh] md:h-[35vh] w-[50%] lg:w-[40%] relative overflow-hidden'>
           {

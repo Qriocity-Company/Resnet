@@ -93,15 +93,13 @@ export const Services = () => {
         </h1>
         <div className="flex flex-col items-center mt-4">
           <div>
-            How we help you move through{" "}
+            How we help you move through our{" "}
             <span className="font-semibold text-[#FF001D]">
-              Machine Learning
+             Software Solutions
             </span>{" "}
-            and
+            
           </div>
-          <div className="font-semibold text-[#FF001D]">
-            Artificial Intelligence
-          </div>
+          
         </div>
       </div>
       <section className="flex flex-col md:flex-row">

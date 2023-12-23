@@ -5,9 +5,9 @@ import user from "../assets/user1.png"
 
 
 const testimonials = [
-  { id: 1, content: 'ResNet delivered beyond my expectations! Their innovative designs and seamless development transformed our online presence. From the initial concept discussions to the final execution, every step was handled with precision and professionalism. The team&apos;s commitment to excellence truly sets them apart', author: 'Aarti Desai',position:'Head of Marketting, Infomatica.co' },
-  { id: 2, content: 'Exceptional work by ResNet! Their team understood our vision and translated it into a website that not only reflects our brand perfectly but also resonates with our target audience. The seamless collaboration and creative input made the entire process a breeze. Professional, creative, and highly recommended.', author: 'Suresh Mehta' ,position:'CEO, Global Automations' },
-  { id: 3, content: 'Kudos to ResNet for creating a website that not only looks great but also functions seamlessly. Their attention to detail, user-centric design, and robust development make for an outstanding combination. We felt supported throughout the project, and the end result speaks volumes. Highly satisfied!', author: 'Viraj Dobriyal',position:'CFO, Digi-Life'  },
+  
+  { id: 1, content: 'Exceptional work by ResNet! Their team understood our vision and translated it into a website that not only reflects our brand perfectly but also resonates with our target audience. The seamless collaboration and creative input made the entire process a breeze. Professional, creative, and highly recommended.', author: 'Sushil Athithya' ,position:'COO, Invictusglobaltech solutions' },
+  { id: 2, content: 'Kudos to ResNet for creating a website that not only looks great but also functions seamlessly. Their attention to detail, user-centric design, and robust development make for an outstanding combination. We felt supported throughout the project, and the end result speaks volumes. Highly satisfied!', author: 'Devakumar',position:'Co-Founder ,Duolearn'  },
   // Add more testimonials as needed
 ];
 
@@ -76,7 +76,7 @@ export const Testimonial = () => {
       <div className="absolute -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[95%] bottom-[5%]"></div>
       <div>
         <div className='text-[46px] p-3 font-bold text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center 2'>Voices of Victory</div>
-        <p className='text-[16px] text-center max-w-md mx-auto'>Client Testimonials That Speak to the Power of <span className='text-[#FF001D]'>Resnet&apos;</span>AI & Machine Learning Excellence</p>
+        <p className='text-[16px] text-center max-w-md mx-auto'>Client Testimonials That Speak to the Power of <span className='text-[#FF001D]'>Resnet&apos;</span>Software Solutions</p>
       </div>
 
     
@@ -96,7 +96,7 @@ export const Testimonial = () => {
       
     </button>
     <button className={`${slideIndex === 2 ? "bg-[#FF001D]" : "bg-[#262651] " } w-5 h-5  rounded-full`} onClick={() => setSlideIndex(2)}></button>
-    <button className={`${slideIndex === 3 ? "bg-[#FF001D]" : "bg-[#262651] " } w-5 h-5  rounded-full`} onClick={() => setSlideIndex(3)}></button>
+   
   </div>
      
     </div>

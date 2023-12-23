@@ -28,7 +28,7 @@ export const About:React.FC = () => {
          </div>
         </div>
         <div className=" mt-10 md:mt-0 text-[16px] md:text-[24px]">
-        Elevate your business with our AI/ML automation services. Experience 10x growth, seamless scalability, and thriving operations. Let us reshape your future where innovation meets efficiency, and success knows no bounds.
+        Elevate your business with our AI/ML automation services - Software Solutions. Experience 10x growth, seamless scalability, and thriving operations. Let us reshape your future where innovation meets efficiency, and success knows no bounds.
         </div>
 
         <div className="mt-5 relative w-fit group left-[50%] translate-x-[-50%]">
