@@ -1,72 +1,66 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Navbar } from "@/components/Navbar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const page = (props:any) => {
-  const URL = "https://crm-backend-o6sb.onrender.com";
+const URL = "https://crm-backend-o6sb.onrender.com";
 
-  const title: any = props.searchParams.name;
-  const url: any = props.searchParams.url;
-  const category = props.searchParams.category;
-  const decription = props.searchParams.desc;
-  const caption = props.searchParams.caption;
-  const dates: any = props.searchParams.date;
-  
+interface Blog {
+  _id: string;
+  title: string;
+  content: string;
+  company: string;
+  category: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+}
+
+const page = (props: any) => {
+  const id = props.searchParams.id;
+  const [blog, setBlog] = useState<Blog>({
+    _id: "",
+    title: "",
+    content: "",
+    company: "",
+    category: "",
+    createdAt: "",
+    updatedAt: "",
+    __v: 0,
+  });
+
+  const fetchAllBlogs = () => {
+    axios
+      .get(`${URL}/blog/company/Ressent`)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data.length >= 1) {
+          const foundBlog = res.data.find((blog: any) => blog._id === id);
+          if (foundBlog) {
+            setBlog(foundBlog);
+          } else {
+            toast.warning("Blog not found");
+          }
+        } else {
+          toast.warning("No blogs Found");
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    fetchAllBlogs();
+  }, []);
+
   return (
-    <div>
-      <main className=" w-full flex flex-col justify-center items-center max-w-[350px] md:max-w-[760px] lg:max-w-[1440px] font-Poppins">
-        <Navbar />
-
-        <div className="mt-[100px] mb-10 w-[100%]  md:w-[90%] mx-auto ">
-          <div className="md:hidden max-w-md mx-auto mt-4 p-4">
-            <img
-              src={`${URL}/${url}`}
-              alt={title}
-              className="mb-4 w-full  rounded-lg"
-            />
-
-            <h2 className="text-2xl font-bold mb-2 text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text ">
-              {title}
-            </h2>
-            <p className="text-white mb-2">{caption}</p>
-            <span className="text-center text-white text-sm font-medium">
-              {new Date(dates).toLocaleString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-            <p className="text-white ">{decription}</p>
-          </div>
-          <div className=" p-5 flex-col  md:flex hidden gap-10 ">
-            <h2 className="font-bold text-2xl md:text-5xl text-transparent bg-gradient-to-r from-[#FF001D] from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center ">
-              {title}
-            </h2>
-            <p className="text-white  text-center italic mb-3">{caption}</p>
-            <img
-              src={`${URL}/${url}`}
-              alt={title}
-              className="mb-4  max-h-[500px] self-center rounded-lg"
-            />
-
-            <div className="flex flex-col gap-5">
-              <p className="text-white text-lg ">{decription}</p>
-
-              <p className="text-white">
-                Date :{" "}
-                <span className="italic">
-                  {" "}
-                  {new Date(dates).toLocaleString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
+    <div className="mt-20 mb-10 w-5/6 mx-auto min-h-screen justify-center flex  flex-col items-center">
+      <Navbar/>
+      <div className="w-full mx-auto mt-4 p-4 border border-[#ff4000] rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold mb-2">{blog.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      </div>
     </div>
   );
 };
