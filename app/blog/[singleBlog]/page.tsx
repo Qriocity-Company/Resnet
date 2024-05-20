@@ -18,7 +18,7 @@ interface Blog {
   __v: number;
 }
 
-const page = (props: any) => {
+const Page = (props: any) => {
   const id = props.searchParams.id;
   const [blog, setBlog] = useState<Blog>({
     _id: "",
@@ -65,4 +65,4 @@ const page = (props: any) => {
   );
 };
 
-export default page;
+export default Page;
