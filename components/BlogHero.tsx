@@ -2,94 +2,118 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const URL = "https://crm-backend-o6sb.onrender.com";
 
 const BlogHero = () => {
-  const URL = "https://crm-backend-o6sb.onrender.com";
-
-  const [data, setData] = useState("");
   const [blogs, setBlogs] = useState([]);
-  const[category, setCategory]= useState("Ressent");
+  const [allcategory ,setAllCategory] = useState([]);
+  const[category, setCategory]= useState("");
+  const[selection , setSelection] = useState("All");
 
   useEffect(() => {
     axios
-      .get(`${URL}/blog/company/${category}`)
+      .get(`${URL}/blog/category/Ressent`)
       .then((res) => {
         console.log(res.data);
-        setBlogs(res.data);
+        setAllCategory(res.data);
       })
       .catch((err) => console.log(err));
+
+      fetchAllBlogs();
   }, []);
 
   useEffect(() => {
     axios
-      .get(`${URL}/blog/company/${category}`)
+      .get(`${URL}/blog/company/Ressent/${category}`)
       .then((res) => {
         console.log(res.data);
-        setBlogs(res.data);
+        if(res.data.length>=1)
+          setBlogs(res.data);
+        else
+          toast.warning("No blogs Found");
       })
       .catch((err) => console.log(err));
   }, [category]);
 
+  const fetchAllBlogs =()=>{
+   
+    axios.get(`${URL}/blog/company/Ressent`).then((res)=>{
+      console.log(res.data);
+      if(res.data.length>=1)
+        setBlogs(res.data);
+      else
+        toast.warning("No blogs Found");
+    }).catch((err)=> console.log(err));
+  }
+
+
   return (
-    <div className="w-full font-Poppins px-1 md:px-8">
-      <div className="mt-20 self-start flex items-start flex-col">
-        <h1 className="pb-1 font-semibold text-3xl text-transparent bg-gradient-to-r from-red-700 from-40% via-purple-800 via-60% to-blue-700 to-100% bg-clip-text text-center">
-          Blogs
-        </h1>
-        <div className="flex flex-col items-center mt-2">
-          <div>Uncover the Secrets: Journey into Our Blog</div>
-        </div>
+    <div className="w-full mx-auto max-w-[1440px] mt-[100px] mb-10 font-Poppins px-4 md:px-0 h-screen ">
+    <div className=" self-start flex items-start flex-col">
+      <h1 className="pb-1 font-bold md:text-5xl text-2xl md:mb-5 text-white ">
+        Blogs
+      </h1>
+      <div className="flex flex-col items-center mt-2 text-white">
+        <div>Uncover the Secrets: Journey into Our Blog</div>
       </div>
-
-      <div className="flex flex-col md:flex-row justify-start w-full mt-0 md:mt-10  z-10 ">
-        <div className="md:flex-[3] flex flex-col justify-start mt-10 mb-10 md:mb-0 ">
-          <h1 className="font-semibold text-3xl text-white pb-4 ">
-            Categories
-          </h1>
-          <span className={category !='Ressent'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"} onClick={()=>{setCategory("Ressent")}}>All</span>
-          <span className={category !='software-development'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"}  onClick={()=>{setCategory("software-development")}}>Software Development</span>
-          <span className={category !='app-development'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"}  onClick={()=>{setCategory("app-development")}}>App Development</span>
-          <span className={category !='ui-ux'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"} onClick={()=>{setCategory("ui-ux")}}>UI/UX Design</span>
-          <span className={category !='ai-ml'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"} onClick={()=>{setCategory("ai-ml")}}>AI/ML Solutions</span>
-          <span className={category !='landing-page'?"text-[20px] text-[#FF001D] mb-1 hover:text-blue-700 font-medium cursor-pointer" : "text-[20px] hover:text-[#FF001D] mb-1 text-blue-700 font-medium cursor-pointer"}  onClick={()=>{setCategory("landing-page")}}>Landing Page Development</span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 md:flex-[7] gap-4 ">
-          {blogs.map((b: any, index) => {
-            return (
-              <Link
-                key={index}
-                href={{pathname:`/blog/singleBlog`, query: { name: b.title , url:b.imageURL ,category:b.category ,desc:b.description, date:b.createdAt, caption:b.caption}}}
-                className="flex flex-col gap-1 justify-start items-start mb-4 "
-              >
-                <img
-                  src={`${URL}/${b.imageURL}`}
-                  alt={b.title}
-                  className="image w-[350px]  h-[250px] rounded-[10px]"
-                  width={480}
-                  height={300}
-                />
-                <div className="bg-[#ff001e2d] border text-[10px] border-[#ff001d] rounded-[10px] py-1 px-3 text-[#ff001d]">
-                  {b.category}
-                </div>
-                <h2 className="text-white text-lg font-semibold ">{b.title}</h2>
-                <span className="text-center text-white text-sm font-medium">
-                {new Date(b.createdAt).toLocaleString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-                </span>
-
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-      <div className="absolute  w-[755px] h-64 bg-[#ff001d] rounded-full blur-[250px]  left-[30%] -top-[35%]"></div>
-      <div className="sticky -z-10  w-[555px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[90%] -bottom-[25%]"></div>
     </div>
-  );
+    <div className="flex flex-col md:flex-row justify-start  mt-0 md:mt-10  z-10 ">
+      <div className="md:flex-[0.25] flex flex-col justify-start mt-10 mb-10 md:mb-0 ">
+        <h1 className="font-semibold text-3xl text-white pb-4 ">
+          Categories
+        </h1>
+        <span
+          className={
+            selection != "All"
+              ? "text-[20px] text-[#ff0000] mb-1 hover:text-white font-medium cursor-pointer"
+              : "text-[20px] hover:text-[#ff0000]  mb-1 text-white font-medium cursor-pointer"
+          }
+          onClick={() => {
+            fetchAllBlogs();
+            setSelection("All");
+          }}
+        >
+          All
+        </span>
+        {allcategory.map((m:any,i)=>{
+          return (
+            <span key={i}
+          className={
+            selection != m.category
+              ? "text-[20px] text-[#ff0000] mb-1 hover:text-white font-medium cursor-pointer"
+              : "text-[20px] hover:text-[#ff0000] mb-1 text-white font-medium cursor-pointer"
+          }
+          onClick={() => {
+            setCategory(m._id);
+            setSelection(m.category);
+          }}
+        >
+          {m.category}
+        </span>
+          )
+        })}
+        
+       
+      </div>
+      <div className="grid grid-flow-row grid-cols-1 flex-1 gap-10">
+        {blogs.map((b:any, index) => {
+          return (
+            <Link
+              key={index}
+              href={{pathname:`/blog/singleBlog`, query:{id:b._id}}}
+              className="flex flex-col px-8 justify-center items-start bg-opacity-5 drop-shadow-xl text-white bg-white min-h-[100px] shadow-[#ff0000] shadow-md w-full rounded-xl "
+            >
+              <h1 className="text-2xl font-bold mb-2">{b.title}</h1>
+              <span className="text-[#ff0000]">Read More</span>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+);
 };
 
 export default BlogHero;
