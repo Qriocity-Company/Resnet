@@ -30,13 +30,13 @@ export const Footer = () => {
             <div className='flex gap-6 items-center'>
               <Image src={locationIcon} height={22} alt='Location' className='h-[22px]'></Image>
               <p className='text-left'>
-              42/3, kannagi st, anna nedum pathai, extension, choolaimedu, chennai, tamil nadu 600094
+              Srinivasa Nagar 2nd Street, Velachery, Chennai, Tamil Nadu 600042
               </p>
             </div>
             <div className='flex gap-6 items-center'>
               <Image src={callIcon} alt='Location' height={22} className='h-[22px]'></Image>
               <p className='text-left'>
-                (+91)-9944878589
+                (+91)-9629401419
               </p>
             </div>
           </div>
