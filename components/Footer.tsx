@@ -28,16 +28,10 @@ export const Footer = () => {
           {/* address and contact */}
           <div className='w-[100%] md:w-[50%] flex flex-col gap-4 mt-4 md:mt-0'>
             <div className='flex gap-6 items-center'>
-              <Image src={locationIcon} height={22} alt='Location' className='h-[22px]'></Image>
-              <p className='text-left'>
-              Srinivasa Nagar 2nd Street, Velachery, Chennai, Tamil Nadu 600042
-              </p>
+             
             </div>
             <div className='flex gap-6 items-center'>
-              <Image src={callIcon} alt='Location' height={22} className='h-[22px]'></Image>
-              <p className='text-left'>
-                (+91)-9629401419
-              </p>
+              
             </div>
           </div>
         </div>
