@@ -25,7 +25,16 @@ export const Footer = () => {
             </p>
           </div>
 
-          
+          {/* address and contact */}
+          <div className='w-[100%] md:w-[50%] flex flex-col gap-4 mt-4 md:mt-0'>
+            <div className='flex gap-6 items-center'>
+             
+            </div>
+            <div className='flex gap-6 items-center'>
+              
+            </div>
+          </div>
+        </div>
         {/* Links div */}
         <div className='  w-[100%] sm:mt-10 md:mt-12 lg:mt-4 lg:w-[40%] hidden md:flex flex-col gap-4'>
           <div className=' w-full flex flex-col justify-between gap-2 footer-links sm:text-xs md:text-base z-10'>
