@@ -57,7 +57,7 @@ export const Footer = () => {
       </div>
 
       <div className='text-center mt-2 md:mt-0'>
-        &copy; - 2023 Resnet Pvt Ltd | All Right Reserved
+        &copy; - 2024 Resnet Pvt Ltd | All Right Reserved
       </div>
       <div className="absolute  w-[375px] h-64 bg-red-600 rounded-full blur-[160px]  left-[30%] -bottom-[45%]"></div>
       <div className="absolute  w-[275px] h-64 bg-sky-600 rounded-full blur-[160px]  left-[60%] -bottom-[25%]"></div>
