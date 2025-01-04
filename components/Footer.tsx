@@ -9,6 +9,7 @@ import insta from '../assets/insta.png'
 import Image from 'next/image'
 import '../styles/Footer.css'
 
+
 export const Footer = () => {
   return (
     <footer className=' pb-4 border-t-2 border-[#353547] text-[#727289] relative overflow-hidden w-[350px] md:w-[] lg:w-[1440px]'>
@@ -55,7 +56,11 @@ export const Footer = () => {
         </div>
 
       </div>
-
+        <div className='flex justify-center items-center gap-10 mb-5'>
+          <a href='#privacy' className='font-bold'>Privacy Policy</a>
+          <a className='font-bold'>Terms and Conditions</a>
+          <a className='font-bold'>Refund & Cancellation policy</a>
+        </div>
       <div className='text-center mt-2 md:mt-0'>
         &copy; - 2024 Resnet Pvt Ltd | All Right Reserved
       </div>
